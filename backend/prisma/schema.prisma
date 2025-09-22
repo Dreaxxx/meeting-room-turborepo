@@ -1,0 +1,33 @@
+// prisma/schema.prisma
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+generator client {
+  provider = "prisma-client-js"
+}
+
+model Room {
+  id           String         @id @default(cuid())
+  name         String         @unique
+  capacity     Int
+  amenities    String[]       @default([])
+  reservations Reservation[]
+  createdAt    DateTime       @default(now())
+  updatedAt    DateTime       @updatedAt
+}
+
+model Reservation {
+  id        String   @id @default(cuid())
+  roomId    String
+  title     String
+  startsAt  DateTime
+  endsAt    DateTime
+  createdBy String
+  createdAt DateTime @default(now())
+
+  room      Room     @relation(fields: [roomId], references: [id])
+
+  @@index([roomId, startsAt])
+  @@index([roomId, endsAt])
+}
