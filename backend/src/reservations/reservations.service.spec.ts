@@ -5,13 +5,17 @@ import { ReservationsService } from './reservations.service';
 
 describe('ReservationsService (unit)', () => {
   let service: ReservationsService;
-  let prisma: { reservation: { findFirst: jest.Mock, create: jest.Mock } };
+  let prisma: { reservation: { findUnique: jest.Mock, findMany: jest.Mock, findFirst: jest.Mock, update: jest.Mock, create: jest.Mock, delete: jest.Mock } };
 
   beforeEach(async () => {
     prisma = {
       reservation: {
+        findUnique: jest.fn(),
+        findMany: jest.fn(),
         findFirst: jest.fn(),
         create: jest.fn(),
+        update: jest.fn(),
+        delete: jest.fn(),
       },
     };
 
@@ -31,6 +35,32 @@ describe('ReservationsService (unit)', () => {
     startsAt: new Date('2025-09-22T09:00:00Z').toISOString(),
     endsAt: new Date('2025-09-22T10:00:00Z').toISOString(),
   };
+
+  it('should findAll reservations', async () => {
+    prisma.reservation.findMany = jest.fn().mockResolvedValue([
+      { id: '1', ...baseDto },
+    ]);
+
+    console.log('[reservations:findAll] Calling service.findAll()');
+
+    const out = await service.findAll();
+
+    console.log('[reservations:findAll] Reservations:', JSON.stringify(prisma.reservation.findMany.mock.calls[0][0]));
+
+    expect(out).toEqual([{ id: '1', ...baseDto }]);
+  });
+  
+  it('should findOne reservation by ID', async () => {
+    prisma.reservation.findUnique = jest.fn().mockResolvedValue({ id: '1', ...baseDto });
+
+    console.log('[reservations:findOne] Calling service.findOne("1")');
+
+    const out = await service.findOne('1');
+
+    console.log('[reservations:findOne] Reservation:', JSON.stringify(prisma.reservation.findUnique.mock.calls[0][0]));
+
+    expect(out).toEqual({ id: '1', ...baseDto });
+  });
 
   it('should reject when endsAt <= startsAt', async () => {
     console.log('[reservations:validation] Testing endsAt <= startsAt');
@@ -68,5 +98,29 @@ describe('ReservationsService (unit)', () => {
     console.log('[reservations:create] Created reservation:', out);
 
     expect(out).toEqual({ id: 'new', ...baseDto });
+  });
+
+  it('should update when no overlap', async () => {
+    prisma.reservation.findFirst.mockResolvedValue(null);
+
+    console.log('[reservations:update] No overlap -> updating');
+
+    prisma.reservation.update = jest.fn().mockResolvedValue({ id: 'to-update', ...baseDto, title: 'Updated Title' });
+
+    const out = await service.update('to-update', { title: 'Updated Title' });
+    console.log('[reservations:update] Updated reservation:', out);
+
+    expect(out).toEqual({ id: 'to-update', ...baseDto, title: 'Updated Title' });
+  });
+
+  it('should delete reservation', async () => {
+    prisma.reservation.delete = jest.fn().mockResolvedValue({ id: 'to-delete', ...baseDto });
+
+    console.log('[reservations:delete] Deleting reservation "to-delete"');
+
+    const out = await service.remove('to-delete');
+    console.log('[reservations:delete] Deleted reservation:', out);
+
+    expect(out).toEqual({ id: 'to-delete', ...baseDto });
   });
 });

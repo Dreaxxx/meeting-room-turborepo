@@ -4,8 +4,12 @@ import { PrismaService } from 'src/prisma/prisma.service';
 
 @Injectable()
 export class RoomsService {
-  constructor(private readonly prismaService: PrismaService) { }
-
+  constructor(private readonly prismaService: PrismaService) {
+    if (!prismaService) {
+      throw new Error('PrismaService is required');
+    }
+  }
+  
   create(dto: CreateRoomDto) {
     return this.prismaService.room.create({
       data: {
