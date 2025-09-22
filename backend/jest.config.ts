@@ -9,7 +9,7 @@ const config: Config = {
   moduleNameMapper: {
     '^src/(.*)$': '<rootDir>/src/$1',
   },
-  collectCoverageFrom: ['src/**/*.ts', '!src/main.ts', '!src/**/*.module.ts'],
+  collectCoverageFrom: ['src/**/*.ts', '!src/main.ts', '!src/**/*.module.ts', '!src/**/dto/*.ts', '!src/**/entities/*.ts'],
   coverageDirectory: 'coverage',
   setupFilesAfterEnv: ['<rootDir>/test/setup-unit.ts'],
 };
