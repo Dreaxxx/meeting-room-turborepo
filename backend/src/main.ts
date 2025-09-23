@@ -19,13 +19,12 @@ async function bootstrap() {
   const document = SwaggerModule.createDocument(app, config, {
     ignoreGlobalPrefix: false,
   });
-  
+
   SwaggerModule.setup('api', app, document, {
     jsonDocumentUrl: 'swagger',
     explorer: true,
     customSiteTitle: 'Meeting Rooms — Swagger',
   });
-
 
   const prismaService = app.get(PrismaService);
   prismaService.enableShutdownHooks(app);

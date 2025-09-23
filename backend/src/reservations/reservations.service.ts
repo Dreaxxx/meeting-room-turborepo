@@ -5,11 +5,16 @@ import { PrismaService } from 'src/prisma/prisma.service';
 
 @Injectable()
 export class ReservationsService {
-  constructor(private prisma: PrismaService) {}
+  constructor(private prisma: PrismaService) { }
 
   async create(dto: CreateReservationDto) {
+    const now = new Date();
     const starts = new Date(dto.startsAt);
     const ends = new Date(dto.endsAt);
+
+    if (starts < now)
+      throw new BadRequestException('startsAt must be in the future');
+
     if (ends <= starts)
       throw new BadRequestException('endsAt must be after startsAt');
 
@@ -19,6 +24,7 @@ export class ReservationsService {
         OR: [{ startsAt: { lt: ends }, endsAt: { gt: starts } }],
       },
     });
+
     if (overlap)
       throw new BadRequestException(
         'Time slot not available, overlaps with existing reservation',
