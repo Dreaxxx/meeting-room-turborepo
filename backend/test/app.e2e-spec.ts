@@ -14,7 +14,9 @@ describe('API (e2e)', () => {
     }).compile();
 
     app = moduleRef.createNestApplication();
-    app.useGlobalPipes(new ValidationPipe({ whitelist: true, transform: true }));
+    app.useGlobalPipes(
+      new ValidationPipe({ whitelist: true, transform: true }),
+    );
     await app.init();
 
     prisma = app.get(PrismaService);
@@ -34,14 +36,14 @@ describe('API (e2e)', () => {
     });
 
     it('GET /rooms -> get all rooms', async () => {
-      const res = await request(app.getHttpServer())
-        .get('/rooms')
-        .expect(200);
+      const res = await request(app.getHttpServer()).get('/rooms').expect(200);
       expect(res.body.length).toBeGreaterThan(0);
     });
 
     it('GET /rooms/:id -> get one room', async () => {
-      const { body: rooms } = await request(app.getHttpServer()).get('/rooms').expect(200);
+      const { body: rooms } = await request(app.getHttpServer())
+        .get('/rooms')
+        .expect(200);
       const roomsId = rooms[0].id;
 
       const res = await request(app.getHttpServer())
@@ -53,12 +55,14 @@ describe('API (e2e)', () => {
 
   describe('reservations', () => {
     it('POST /reservations -> creates then rejects overlap', async () => {
-      const { body: rooms } = await request(app.getHttpServer()).get('/rooms').expect(200);
+      const { body: rooms } = await request(app.getHttpServer())
+        .get('/rooms')
+        .expect(200);
       const roomId = rooms[0].id;
 
-      const startsAt = new Date('2025-09-22T09:00:00.000Z').toISOString();
-      const startsAt2 = new Date('2025-09-22T09:30:00.000Z').toISOString();
-      const endsAt = new Date('2025-09-22T10:00:00.000Z').toISOString();
+      const startsAt = new Date('2025-11-22T09:00:00.000Z').toISOString();
+      const startsAt2 = new Date('2025-11-22T09:30:00.000Z').toISOString();
+      const endsAt = new Date('2025-11-22T10:00:00.000Z').toISOString();
 
       await request(app.getHttpServer())
         .post('/reservations')
@@ -79,7 +83,9 @@ describe('API (e2e)', () => {
     });
 
     it('GET /reservations/:id -> get one reservation', async () => {
-      const { body: reservations } = await request(app.getHttpServer()).get('/reservations').expect(200);
+      const { body: reservations } = await request(app.getHttpServer())
+        .get('/reservations')
+        .expect(200);
       const reservationId = reservations[0].id;
 
       const res = await request(app.getHttpServer())
@@ -89,18 +95,25 @@ describe('API (e2e)', () => {
     });
 
     it('PATCH /reservations/:id -> updates a reservation', async () => {
-      const { body: reservations } = await request(app.getHttpServer()).get('/reservations').expect(200);
+      const { body: reservations } = await request(app.getHttpServer())
+        .get('/reservations')
+        .expect(200);
       const reservationId = reservations[0].id;
 
       const res = await request(app.getHttpServer())
         .patch(`/reservations/${reservationId}`)
         .send({ title: 'Updated Title' })
         .expect(200);
-      expect(res.body).toMatchObject({ id: reservationId, title: 'Updated Title' });
+      expect(res.body).toMatchObject({
+        id: reservationId,
+        title: 'Updated Title',
+      });
     });
 
     it('DELETE /reservations/:id -> deletes a reservation', async () => {
-      const { body: reservations } = await request(app.getHttpServer()).get('/reservations').expect(200);
+      const { body: reservations } = await request(app.getHttpServer())
+        .get('/reservations')
+        .expect(200);
       const reservationId = reservations[0].id;
 
       await request(app.getHttpServer())

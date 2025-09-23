@@ -9,7 +9,7 @@ export class RoomsService {
       throw new Error('PrismaService is required');
     }
   }
-  
+
   create(dto: CreateRoomDto) {
     return this.prismaService.room.create({
       data: {

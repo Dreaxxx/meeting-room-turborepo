@@ -6,7 +6,7 @@ import { ApiOkResponse, ApiTags } from '@nestjs/swagger';
 @ApiTags('Rooms')
 @Controller('rooms')
 export class RoomsController {
-  constructor(private readonly roomsService: RoomsService) { }
+  constructor(private readonly roomsService: RoomsService) {}
 
   @ApiOkResponse({ description: 'The room has been successfully created.' })
   @Post()
