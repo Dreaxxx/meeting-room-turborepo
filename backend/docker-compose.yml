@@ -1,17 +1,19 @@
 services:
   postgres:
-    image: postgres:16
+    image: postgres:17
+    container_name: backend-postgres-1
     restart: unless-stopped
     ports:
-      - "5433:5432"
+      - "55432:5432"
     environment:
-      POSTGRES_USER: app
-      POSTGRES_PASSWORD: app
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
       POSTGRES_DB: meetingdb
     volumes:
       - pgdata:/var/lib/postgresql/data
   pgadmin:
-    image: dpage/pgadmin4:8
+    image: dpage/pgadmin4:latest
+    container_name: backend-pgadmin
     restart: unless-stopped
     ports:
       - "5050:80"
