@@ -1,12 +1,9 @@
-// src/stats/dto/range.dto.ts
 import { ApiPropertyOptional } from '@nestjs/swagger';
 import {
   IsDateString,
   IsIn,
   IsInt,
   IsOptional,
-  IsUUID,
-  Min,
 } from 'class-validator';
 
 export class ViewStatsDto {
