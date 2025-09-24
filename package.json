@@ -14,7 +14,8 @@
     "test:e2e": "turbo run test:e2e",
     "prisma:generate": "turbo run prisma:generate",
     "prisma:migrate": "turbo run prisma:migrate",
-    "clean": "turbo run clean && rimraf node_modules"
+    "clean": "turbo run clean && rimraf node_modules",
+    "postinstall": "turbo run prisma:generate"
   },
   "devDependencies": {
     "turbo": "^2.0.0",

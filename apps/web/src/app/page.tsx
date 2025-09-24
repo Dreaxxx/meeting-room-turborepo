@@ -1,7 +1,15 @@
 'use client';
 
 import { useEffect, useMemo, useState } from 'react';
-import { Chart as ChartJS, LineElement, CategoryScale, LinearScale, PointElement, Tooltip, Legend } from 'chart.js';
+import {
+  Chart as ChartJS,
+  LineElement,
+  CategoryScale,
+  LinearScale,
+  PointElement,
+  Tooltip,
+  Legend,
+} from 'chart.js';
 import { Room } from './lib/types';
 import { api } from './lib/api';
 import Card from '@/components/Card';
@@ -53,11 +61,7 @@ export default function Dashboard() {
         <ControlsBar>
           <RoomSelector value={roomId} onChange={setRoomId} includeAll />
           <Field label="Granularité">
-            <select
-              className="input"
-              value={gran}
-              onChange={(e) => setGran(e.target.value as any)}
-            >
+            <select className="input" value={gran} onChange={(e) => setGran(e.target.value as any)}>
               <option value="daily">Journalier</option>
               <option value="weekly">Hebdomadaire</option>
               <option value="monthly">Mensuel</option>
@@ -75,7 +79,9 @@ export default function Dashboard() {
               style={{ padding: 16, borderRadius: 12, border: '1px solid #eee' }}
             >
               <div style={{ fontWeight: 700, marginBottom: 4 }}>{t.room?.name ?? t.roomId}</div>
-              <div style={{ opacity: .75 }}>Réservations: <b>{t.count}</b></div>
+              <div style={{ opacity: 0.75 }}>
+                Réservations: <b>{t.count}</b>
+              </div>
             </div>
           ))}
           {!top.length && <EmptyDiv>Aucune réservation</EmptyDiv>}
