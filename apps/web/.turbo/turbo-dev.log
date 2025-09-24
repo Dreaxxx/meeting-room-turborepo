@@ -17,12 +17,12 @@
      · serverActions
 
  [32m[1m✓[22m[39m Starting...
- [32m[1m✓[22m[39m Ready in 1658ms
+ [32m[1m✓[22m[39m Ready in 1533ms
  [37m[1m○[22m[39m Compiling / ...
- [32m[1m✓[22m[39m Compiled / in 1310ms (826 modules)
+ [32m[1m✓[22m[39m Compiled / in 2.2s (840 modules)
 []
- GET / [32m200[39m in 1784ms
-(node:89494) [DEP0060] DeprecationWarning: The `util._extend` API is deprecated. Please use Object.assign() instead.
+ GET / [32m200[39m in 2977ms
+(node:91599) [DEP0060] DeprecationWarning: The `util._extend` API is deprecated. Please use Object.assign() instead.
 (Use `node --trace-deprecation ...` to show where the warning was created)
- [32m[1m✓[22m[39m Compiled /favicon.ico in 312ms (550 modules)
- GET /favicon.ico [32m200[39m in 491ms
+ [32m[1m✓[22m[39m Compiled /favicon.ico in 258ms (550 modules)
+ GET /favicon.ico [32m200[39m in 432ms
