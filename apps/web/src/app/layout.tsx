@@ -14,10 +14,10 @@ export default function RootLayout({ children }: { children: ReactNode }) {
     <html lang="fr">
       <body suppressHydrationWarning={true}>
         <div className="container">
-          <h1 className="h1">Meeting Rooms — Front</h1>
-          <nav className="nav">
-            <Link href="/">Dashboard</Link>
-            <Link href="/rooms">Rooms</Link>
+          <h1 className="h1" style={{ marginBottom: 24 }}>Meeting Rooms — Front</h1>
+          <nav className="nav" style={{ marginBottom: 24 }}>
+            <Link href="/" style={{ marginRight: 12 }}>Dashboard</Link>
+            <Link href="/rooms" style={{ marginRight: 12 }}>Salles</Link>
             <Link href="/reservations">Reservations</Link>
           </nav>
           {children}
