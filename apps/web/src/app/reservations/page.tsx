@@ -42,29 +42,29 @@ export default function ReservationsPage() {
 
     return (
         <div className="card">
-            <div className="h1">Create reservation</div>
+            <div className="h1">Créer une réservation</div>
             <div className="grid grid-2">
                 <div>
-                    <label className="label">Room</label>
+                    <label className="label">Salle</label>
                     <select className="input" value={roomId} onChange={e => setRoomId(e.target.value)}>
                         {rooms.map(r => <option key={r.id} value={r.id}>{r.name}</option>)}
                     </select>
                 </div>
                 <div>
-                    <label className="label">TGitre</label>
+                    <label className="label">Titre de la salle</label>
                     <input className="input" value={title} onChange={e => setTitle(e.target.value)} />
                 </div>
                 <div>
-                    <label className="label">Starts at</label>
+                    <label className="label">Débute à</label>
                     <input className="input" type="datetime-local" value={startsAt} onChange={e => setStartsAt(e.target.value)} />
                 </div>
                 <div>
-                    <label className="label">Ends at</label>
+                    <label className="label">Termine à</label>
                     <input className="input" type="datetime-local" value={endsAt} onChange={e => setEndsAt(e.target.value)} />
                 </div>
             </div>
             <div style={{ marginTop: 12 }} className="row">
-                <button className="btn" onClick={submit}>Book</button>
+                <button className="btn" onClick={submit}>Réserver</button>
                 <span>{message}</span>
             </div>
 

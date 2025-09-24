@@ -36,28 +36,28 @@ export default function Dashboard() {
       <div className="card">
         <div className="row">
           <div>
-            <label className="label">Room</label>
+            <label className="label">Salle</label>
             <select className="input" value={roomId} onChange={e => setRoomId(e.target.value)}>
               <option value="">(Toutes)</option>
               {rooms.map(r => <option key={r.id} value={r.id}>{r.name}</option>)}
             </select>
           </div>
           <div>
-            <label className="label">Granularity</label>
+            <label className="label">Granularité</label>
             <select className="input" value={gran} onChange={e => setGran(e.target.value as any)}>
-              <option value="daily">Daily</option>
-              <option value="weekly">Weekly</option>
-              <option value="monthly">Monthly</option>
+              <option value="daily">Journalier</option>
+              <option value="weekly">Hebdomadaire</option>
+              <option value="monthly">Mensuel</option>
             </select>
           </div>
           <div style={{ marginLeft: 'auto' }}>
-            <div>Avg meeting duration: <b>{Math.round(avg)} min</b></div>
+            <div>Durée moyenne de réunion: <b>{Math.round(avg)} min</b></div>
           </div>
         </div>
       </div>
 
       <div className="card">
-        <div className="h1">Top 3 rooms</div>
+        <div className="h1">Top 3 des salles réservées</div>
         <div className="grid grid-2">
           {top.map(t => (
             <div key={t.roomId} className="card">

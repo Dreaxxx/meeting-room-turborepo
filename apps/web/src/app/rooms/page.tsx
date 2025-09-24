@@ -26,27 +26,27 @@ export default function RoomsPage() {
     return (
         <div className="grid" style={{ gap: 24 }}>
             <div className="card">
-                <div className="h1">Create room</div>
+                <div className="h1">Créer une salle</div>
                 <div className="row">
                     <div>
-                        <label className="label">Name</label>
+                        <label className="label">Nom de la salle</label>
                         <input className="input" value={name} onChange={e => setName(e.target.value)} />
                     </div>
                     <div>
-                        <label className="label">Capacity</label>
+                        <label className="label">Capacité</label>
                         <input className="input" type="number" value={capacity} onChange={e => setCapacity(Number(e.target.value))} />
                     </div>
-                    <button className="btn" onClick={submit}>Create</button>
+                    <button className="btn" onClick={submit}>Créer</button>
                 </div>
             </div>
 
             <div className="card">
-                <div className="h1">Rooms</div>
+                <div className="h1">Salles</div>
                 <div className="grid">
                     {rooms.map(r => (
                         <div key={r.id} className="card">
                             <div><b>{r.name}</b></div>
-                            <div>Capacity: {r.capacity}</div>
+                            <div>Capacité: {r.capacity}</div>
                         </div>
                     ))}
                     {!rooms.length && <div>Aucune salle</div>}
