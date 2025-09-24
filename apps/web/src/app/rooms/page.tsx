@@ -1,8 +1,13 @@
 'use client';
 
+import Card from '@/components/Card';
+import ControlsBar from '@/components/ControlsBar';
+import { Field } from '@/components/Field';
 import { useEffect, useState } from 'react';
 import { api } from '../lib/api';
 import { Room, CreateRoomDto } from '../lib/types';
+import EmptyDiv from '@/components/EmptyDiv';
+
 
 export default function RoomsPage() {
     const [rooms, setRooms] = useState<Room[]>([]);
@@ -10,13 +15,15 @@ export default function RoomsPage() {
     const [capacity, setCapacity] = useState<number>(4);
 
     const load = () => api.rooms.list().then(setRooms);
-    useEffect(() => { load().catch(console.error); }, []);
+
+    useEffect(() => {
+        load().catch(console.error);
+    }, []);
 
     const submit = async () => {
         try {
             const dto: CreateRoomDto = { name, capacity };
             await api.rooms.create(dto);
-            setName(''); setCapacity(4);
             await load();
         } catch (e) {
             console.error(e);
@@ -25,33 +32,39 @@ export default function RoomsPage() {
 
     return (
         <div className="grid" style={{ gap: 24 }}>
-            <div className="card">
-                <div className="h1">Créer une salle</div>
-                <div className="row">
-                    <div>
-                        <label className="label">Nom de la salle</label>
-                        <input className="input" value={name} onChange={e => setName(e.target.value)} />
-                    </div>
-                    <div>
-                        <label className="label">Capacité</label>
-                        <input className="input" type="number" value={capacity} onChange={e => setCapacity(Number(e.target.value))} />
-                    </div>
-                    <button className="btn" onClick={submit}>Créer</button>
-                </div>
-            </div>
+            <Card title="Créer une salle" right={null}>
+                <ControlsBar>
+                    <Field label="Nom de la salle">
+                        <input className="input" value={name} onChange={(e) => setName(e.target.value)} />
+                    </Field>
 
-            <div className="card">
-                <div className="h1">Salles</div>
-                <div className="grid">
-                    {rooms.map(r => (
-                        <div key={r.id} className="card">
-                            <div><b>{r.name}</b></div>
-                            <div>Capacité: {r.capacity}</div>
+                    <Field label="Capacité">
+                        <input
+                            className="input"
+                            type="number"
+                            min={1}
+                            value={capacity}
+                            onChange={(e) => setCapacity(Number(e.target.value))}
+                        />
+                    </Field>
+
+                    <button className="btn" onClick={submit} style={{ height: 38 }}>
+                        Créer
+                    </button>
+                </ControlsBar>
+            </Card>
+
+            <Card title="Salles">
+                <div className="grid" style={{ gap: 12 }}>
+                    {rooms.map((r) => (
+                        <div key={r.id} className="card" style={{ padding: 14, borderRadius: 12, border: '1px solid #eee' }}>
+                            <div style={{ fontWeight: 700 }}>{r.name}</div>
+                            <div style={{ opacity: .75 }}>Capacité : {r.capacity}</div>
                         </div>
                     ))}
-                    {!rooms.length && <div>Aucune salle</div>}
+                    {!rooms.length && <EmptyDiv>Aucune salle</EmptyDiv>}
                 </div>
-            </div>
+            </Card>
         </div>
     );
 }

@@ -7,6 +7,7 @@ export type Reservation = {
     roomId: string;
     startsAt: string;
     endsAt: string;
+    room?: Room | null;
 };
 export type CreateReservationDto = {
     roomId: string;
