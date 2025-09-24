@@ -612,3 +612,14 @@ Import trace for requested module:
  GET /favicon.ico [32m200[39m in 11ms
  GET / [32m200[39m in 58ms
  GET /favicon.ico [32m200[39m in 10ms
+ GET / [32m200[39m in 54ms
+ GET /favicon.ico [32m200[39m in 10ms
+ GET / [32m200[39m in 33ms
+ GET / [32m200[39m in 50ms
+ GET /favicon.ico [32m200[39m in 11ms
+ GET / [32m200[39m in 70ms
+ GET /favicon.ico [32m200[39m in 15ms
+ [32m[1m✓[22m[39m Compiled in 842ms (1083 modules)
+ GET / [32m200[39m in 96ms
+ GET / [32m200[39m in 104ms
+ GET /favicon.ico [32m200[39m in 11ms

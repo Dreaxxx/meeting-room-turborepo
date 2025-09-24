@@ -21,8 +21,6 @@ export default function Dashboard() {
     const from = new Date();
     from.setDate(from.getDate() - 14);
     const params = new URLSearchParams({
-      from: from.toISOString(),
-      to: new Date().toISOString(),
       granularity: gran,
     });
 
