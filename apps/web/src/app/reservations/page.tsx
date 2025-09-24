@@ -48,14 +48,14 @@ export default function ReservationsPage() {
       await loadReservations();
     } catch (e: unknown) {
       if (e instanceof AxiosError && e.response) {
-        setMessage(`❌ ${e.response.data.message || e.message}`);
+        setMessage(`Error : ❌ ${e.response.data.message || e.message}`);
         return;
       }
       if (e instanceof Error) {
-        setMessage(`❌ ${e.message}`);
+        setMessage(`Error : ❌ ${e.message}`);
         return;
       }
-      setMessage('❌ Erreur inconnue');
+      setMessage('Error : ❌ Erreur inconnue');
     }
   };
 
@@ -65,10 +65,11 @@ export default function ReservationsPage() {
         <div className="grid grid-2" style={{ gap: 16 }}>
           <RoomSelector value={roomId} onChange={setRoomId} label="Salle" />
           <Field label="Titre de la salle">
-            <input className="input" value={title} onChange={(e) => setTitle(e.target.value)} />
+            <input data-testid='title' className="input" value={title} onChange={(e) => setTitle(e.target.value)} />
           </Field>
           <Field label="Débute à">
             <input
+              data-testid='start'
               className="input"
               type="datetime-local"
               value={startsAt}
@@ -77,6 +78,7 @@ export default function ReservationsPage() {
           </Field>
           <Field label="Termine à">
             <input
+              data-testid='end'
               className="input"
               type="datetime-local"
               value={endsAt}

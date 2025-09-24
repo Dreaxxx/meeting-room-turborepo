@@ -336,3 +336,431 @@ rooms []
  GET /reservations [32m200[39m in 24ms
 rooms []
  GET /reservations [32m200[39m in 743ms
+ [32m[1m✓[22m[39m Compiled in 2.2s (1182 modules)
+ GET /reservations [32m200[39m in 234ms
+ [32m[1m✓[22m[39m Compiled in 379ms (1182 modules)
+ GET /reservations [32m200[39m in 113ms
+ [32m[1m✓[22m[39m Compiled in 187ms (463 modules)
+ GET /reservations [32m200[39m in 80ms
+ [32m[1m✓[22m[39m Compiled in 124ms (463 modules)
+ GET /reservations [32m200[39m in 34ms
+ [32m[1m✓[22m[39m Compiled in 96ms (463 modules)
+ GET /reservations [32m200[39m in 47ms
+ [32m[1m✓[22m[39m Compiled in 105ms (463 modules)
+ GET /reservations [32m200[39m in 32ms
+ [32m[1m✓[22m[39m Compiled in 88ms (463 modules)
+ GET /reservations [32m200[39m in 54ms
+ [32m[1m✓[22m[39m Compiled in 94ms (463 modules)
+ GET /reservations [32m200[39m in 32ms
+ [32m[1m✓[22m[39m Compiled in 90ms (463 modules)
+ GET /reservations [32m200[39m in 28ms
+ [32m[1m✓[22m[39m Compiled in 123ms (463 modules)
+ GET /reservations [32m200[39m in 58ms
+ [32m[1m✓[22m[39m Compiled in 96ms (463 modules)
+ GET /reservations [32m200[39m in 32ms
+ [32m[1m✓[22m[39m Compiled in 92ms (463 modules)
+ GET /reservations [32m200[39m in 55ms
+ [32m[1m✓[22m[39m Compiled in 103ms (463 modules)
+ GET /reservations [32m200[39m in 45ms
+ [32m[1m✓[22m[39m Compiled in 205ms (463 modules)
+ GET /reservations [32m200[39m in 82ms
+ [32m[1m✓[22m[39m Compiled in 138ms (463 modules)
+ GET /reservations [32m200[39m in 48ms
+ [32m[1m✓[22m[39m Compiled in 117ms (463 modules)
+ GET /reservations [32m200[39m in 30ms
+ [32m[1m✓[22m[39m Compiled in 111ms (463 modules)
+ GET /reservations [32m200[39m in 31ms
+ [32m[1m✓[22m[39m Compiled in 94ms (463 modules)
+ GET /reservations [32m200[39m in 32ms
+ [32m[1m✓[22m[39m Compiled in 85ms (463 modules)
+ GET /reservations [32m200[39m in 43ms
+ [32m[1m✓[22m[39m Compiled in 100ms (463 modules)
+ GET /reservations [32m200[39m in 33ms
+ [32m[1m✓[22m[39m Compiled in 104ms (463 modules)
+ GET /reservations [32m200[39m in 46ms
+ [32m[1m✓[22m[39m Compiled in 92ms (463 modules)
+ GET /reservations [32m200[39m in 30ms
+ [32m[1m✓[22m[39m Compiled in 97ms (463 modules)
+ GET /reservations [32m200[39m in 35ms
+ [32m[1m✓[22m[39m Compiled in 93ms (463 modules)
+ GET /reservations [32m200[39m in 32ms
+ [32m[1m✓[22m[39m Compiled in 93ms (463 modules)
+ GET /reservations [32m200[39m in 30ms
+ [32m[1m✓[22m[39m Compiled in 100ms (463 modules)
+ GET /reservations [32m200[39m in 33ms
+ [32m[1m✓[22m[39m Compiled in -86ms (463 modules)
+ GET /reservations [32m200[39m in 54ms
+ [32m[1m✓[22m[39m Compiled in 110ms (463 modules)
+ GET /reservations [32m200[39m in 37ms
+ [32m[1m✓[22m[39m Compiled in 120ms (463 modules)
+ GET /reservations [32m200[39m in 31ms
+ [32m[1m✓[22m[39m Compiled in 135ms (463 modules)
+ GET /reservations [32m200[39m in 44ms
+ GET / [32m200[39m in 45ms
+ [32m[1m✓[22m[39m Compiled in 137ms (463 modules)
+ GET / [32m200[39m in 34ms
+ [32m[1m✓[22m[39m Compiled in 126ms (463 modules)
+ GET / [32m200[39m in 36ms
+ [32m[1m✓[22m[39m Compiled in 132ms (463 modules)
+ GET / [32m200[39m in 40ms
+ [32m[1m✓[22m[39m Compiled in 104ms (463 modules)
+ GET / [32m200[39m in 55ms
+ [32m[1m✓[22m[39m Compiled /rooms in 260ms (724 modules)
+ GET /rooms [32m200[39m in 431ms
+ [32m[1m✓[22m[39m Compiled in 115ms (463 modules)
+ GET /rooms [32m200[39m in 37ms
+ GET /reservations [32m200[39m in 26ms
+ [32m[1m✓[22m[39m Compiled in 114ms (463 modules)
+ GET /reservations [32m200[39m in 47ms
+ [32m[1m✓[22m[39m Compiled in 102ms (463 modules)
+ GET /reservations [32m200[39m in 48ms
+ [32m[1m✓[22m[39m Compiled in 127ms (463 modules)
+ GET /reservations [32m200[39m in 32ms
+ [32m[1m✓[22m[39m Compiled in 106ms (463 modules)
+ GET /reservations [32m200[39m in 32ms
+ [32m[1m✓[22m[39m Compiled in 93ms (463 modules)
+ GET /reservations [32m200[39m in 32ms
+ [32m[1m✓[22m[39m Compiled in 94ms (463 modules)
+ GET /reservations [32m200[39m in 39ms
+ [32m[1m✓[22m[39m Compiled in 88ms (463 modules)
+ GET /reservations [32m200[39m in 31ms
+ [32m[1m✓[22m[39m Compiled in 87ms (463 modules)
+ GET /reservations [32m200[39m in 29ms
+ [32m[1m✓[22m[39m Compiled in 104ms (463 modules)
+ GET /reservations [32m200[39m in 51ms
+ [32m[1m✓[22m[39m Compiled in 85ms (463 modules)
+ GET /reservations [32m200[39m in 30ms
+ [32m[1m✓[22m[39m Compiled in 191ms (463 modules)
+ GET /reservations [32m200[39m in 63ms
+ [32m[1m✓[22m[39m Compiled in 119ms (463 modules)
+ GET /reservations [32m200[39m in 36ms
+ [32m[1m✓[22m[39m Compiled in 123ms (463 modules)
+ GET /reservations [32m200[39m in 40ms
+ [32m[1m✓[22m[39m Compiled in 100ms (463 modules)
+ GET /reservations [32m200[39m in 28ms
+ [32m[1m✓[22m[39m Compiled in 94ms (463 modules)
+ GET /reservations [32m200[39m in 32ms
+ [32m[1m✓[22m[39m Compiled in 97ms (463 modules)
+ GET /reservations [32m200[39m in 30ms
+ [32m[1m✓[22m[39m Compiled in 91ms (463 modules)
+ GET /reservations [32m200[39m in 31ms
+ [32m[1m✓[22m[39m Compiled in 126ms (463 modules)
+ GET /reservations [32m200[39m in 72ms
+ [32m[1m✓[22m[39m Compiled in 94ms (463 modules)
+ GET /reservations [32m200[39m in 45ms
+ [32m[1m✓[22m[39m Compiled in 86ms (463 modules)
+ GET /reservations [32m200[39m in 29ms
+ GET /rooms [32m200[39m in 30ms
+ [32m[1m✓[22m[39m Compiled in 153ms (463 modules)
+ GET /rooms [32m200[39m in 46ms
+ [32m[1m✓[22m[39m Compiled in 108ms (463 modules)
+ GET /rooms [32m200[39m in 46ms
+ [32m[1m✓[22m[39m Compiled in 103ms (463 modules)
+ GET /rooms [32m200[39m in 36ms
+ [32m[1m✓[22m[39m Compiled in 97ms (463 modules)
+ GET /rooms [32m200[39m in 30ms
+ [32m[1m✓[22m[39m Compiled in 105ms (463 modules)
+ GET /rooms [32m200[39m in 35ms
+ [32m[1m✓[22m[39m Compiled in 108ms (463 modules)
+ GET /rooms [32m200[39m in 58ms
+ [32m[1m✓[22m[39m Compiled in 130ms (463 modules)
+ GET /rooms [32m200[39m in 39ms
+ [32m[1m✓[22m[39m Compiled in 103ms (463 modules)
+ GET /rooms [32m200[39m in 34ms
+ [32m[1m✓[22m[39m Compiled in 96ms (463 modules)
+ GET /rooms [32m200[39m in 32ms
+ [32m[1m✓[22m[39m Compiled in 118ms (463 modules)
+ GET /rooms [32m200[39m in 37ms
+ [32m[1m✓[22m[39m Compiled in 79ms (463 modules)
+ GET /rooms [32m200[39m in 35ms
+ [32m[1m✓[22m[39m Compiled in 88ms (463 modules)
+ GET /rooms [32m200[39m in 30ms
+ [32m[1m✓[22m[39m Compiled in 94ms (463 modules)
+ GET /rooms [32m200[39m in 38ms
+ [32m[1m✓[22m[39m Compiled in 128ms (463 modules)
+ GET /rooms [32m200[39m in 45ms
+ [32m[1m✓[22m[39m Compiled in 633ms (1187 modules)
+ GET /rooms [32m200[39m in 121ms
+ [32m[1m✓[22m[39m Compiled in 289ms (1187 modules)
+ GET /rooms [32m200[39m in 99ms
+ GET /reservations [32m200[39m in 30ms
+ [32m[1m✓[22m[39m Compiled in 279ms (1187 modules)
+ GET /reservations [32m200[39m in 70ms
+ [32m[1m✓[22m[39m Compiled in 313ms (1187 modules)
+ GET /reservations [32m200[39m in 66ms
+ [32m[1m✓[22m[39m Compiled in 269ms (1187 modules)
+ GET /reservations [32m200[39m in 68ms
+ [32m[1m✓[22m[39m Compiled in 407ms (1187 modules)
+ GET /reservations [32m200[39m in 74ms
+ [32m[1m✓[22m[39m Compiled in 270ms (1187 modules)
+ GET /reservations [32m200[39m in 70ms
+ [32m[1m✓[22m[39m Compiled in 265ms (1187 modules)
+ GET /reservations [32m200[39m in 57ms
+ [32m[1m✓[22m[39m Compiled in 275ms (1187 modules)
+ GET /reservations [32m200[39m in 66ms
+ [32m[1m✓[22m[39m Compiled in 776ms (1187 modules)
+ GET /reservations [32m200[39m in 72ms
+ [32m[1m✓[22m[39m Compiled in 99ms (463 modules)
+ GET /reservations [32m200[39m in 29ms
+ [32m[1m✓[22m[39m Compiled in 84ms (463 modules)
+ GET /reservations [32m200[39m in 27ms
+ [32m[1m✓[22m[39m Compiled in 129ms (463 modules)
+ GET /reservations [32m200[39m in 41ms
+ [32m[1m✓[22m[39m Compiled in 96ms (463 modules)
+ GET /reservations [32m200[39m in 38ms
+ [32m[1m✓[22m[39m Compiled in 99ms (463 modules)
+ GET /reservations [32m200[39m in 29ms
+ [32m[1m✓[22m[39m Compiled in 466ms (1187 modules)
+ GET /reservations [32m200[39m in 117ms
+ [32m[1m✓[22m[39m Compiled in 278ms (1187 modules)
+ GET /reservations [32m200[39m in 60ms
+ [31m[1m⨯[22m[39m ./src/components/RoomSelector.tsx
+Error:   [31m×[0m Expected '</', got '('
+    ╭─[[36;1;4m/home/ldqtheone/skezi-technical-test/apps/web/src/components/RoomSelector.tsx[0m:22:1]
+ [2m19[0m │   return (
+ [2m20[0m │     <Field label={label}>
+ [2m21[0m │       <select
+ [2m22[0m │         data-test('should first', () => { second })='room'
+    · [35;1m                 ─[0m
+ [2m23[0m │         className="input"
+ [2m24[0m │         value={value}
+ [2m25[0m │         onChange={(e) => onChange(e.target.value)}
+    ╰────
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/components/RoomSelector.tsx
+./src/app/page.tsx
+ [32m[1m✓[22m[39m Compiled in 255ms (1187 modules)
+ GET /reservations [32m200[39m in 58ms
+ [32m[1m✓[22m[39m Compiled in 250ms (1187 modules)
+ GET /reservations [32m200[39m in 59ms
+ [32m[1m✓[22m[39m Compiled in 360ms (1187 modules)
+ GET /reservations [32m200[39m in 69ms
+ [32m[1m✓[22m[39m Compiled in 423ms (1187 modules)
+ GET /reservations [32m200[39m in 71ms
+ [32m[1m✓[22m[39m Compiled in 281ms (1187 modules)
+ GET /reservations [32m200[39m in 70ms
+ [32m[1m✓[22m[39m Compiled in 289ms (1187 modules)
+ GET /reservations [32m200[39m in 67ms
+ [32m[1m✓[22m[39m Compiled in 83ms (463 modules)
+ GET /reservations [32m200[39m in 32ms
+ [32m[1m✓[22m[39m Compiled in 93ms (463 modules)
+ GET /reservations [32m200[39m in 38ms
+ [32m[1m✓[22m[39m Compiled in 197ms (463 modules)
+ GET /reservations [32m200[39m in 45ms
+ [32m[1m✓[22m[39m Compiled in 123ms (463 modules)
+ GET /reservations [32m200[39m in 40ms
+ [32m[1m✓[22m[39m Compiled in 112ms (463 modules)
+ GET /reservations [32m200[39m in 45ms
+ [32m[1m✓[22m[39m Compiled in 94ms (463 modules)
+ GET /reservations [32m200[39m in 39ms
+ [32m[1m✓[22m[39m Compiled in 591ms (1187 modules)
+ GET /reservations [32m200[39m in 98ms
+ [32m[1m✓[22m[39m Compiled in 204ms (463 modules)
+ GET /reservations [32m200[39m in 67ms
+ [32m[1m✓[22m[39m Compiled in 104ms (463 modules)
+ GET /reservations [32m200[39m in 36ms
+ [32m[1m✓[22m[39m Compiled in 97ms (463 modules)
+ GET /reservations [32m200[39m in 36ms
+ [32m[1m✓[22m[39m Compiled in 95ms (463 modules)
+ GET /reservations [32m200[39m in 39ms
+ [32m[1m✓[22m[39m Compiled in 127ms (463 modules)
+ GET /reservations [32m200[39m in 54ms
+ [32m[1m✓[22m[39m Compiled in 100ms (463 modules)
+ GET /reservations [32m200[39m in 44ms
+ [32m[1m✓[22m[39m Compiled in 89ms (463 modules)
+ GET /reservations [32m200[39m in 33ms
+ [32m[1m✓[22m[39m Compiled in 88ms (463 modules)
+ GET /reservations [32m200[39m in 40ms
+ [32m[1m✓[22m[39m Compiled in 86ms (463 modules)
+ GET /reservations [32m200[39m in 42ms
+ [32m[1m✓[22m[39m Compiled in 82ms (463 modules)
+ GET /reservations [32m200[39m in 34ms
+ [32m[1m✓[22m[39m Compiled in 106ms (463 modules)
+ GET /reservations [32m200[39m in 50ms
+ [32m[1m✓[22m[39m Compiled in 107ms (463 modules)
+ GET /reservations [32m200[39m in 56ms
+ [32m[1m✓[22m[39m Compiled in 89ms (463 modules)
+ GET /reservations [32m200[39m in 39ms
+ [32m[1m✓[22m[39m Compiled in 98ms (463 modules)
+ GET /reservations [32m200[39m in 43ms
+ [32m[1m✓[22m[39m Compiled in 86ms (463 modules)
+ GET /reservations [32m200[39m in 38ms
+ [32m[1m✓[22m[39m Compiled in 92ms (463 modules)
+ GET /reservations [32m200[39m in 40ms
+ [32m[1m✓[22m[39m Compiled in 144ms (463 modules)
+ GET /reservations [32m200[39m in 69ms
+ [32m[1m✓[22m[39m Compiled in 100ms (463 modules)
+ GET /reservations [32m200[39m in 42ms
+ [32m[1m✓[22m[39m Compiled in 119ms (463 modules)
+ GET /reservations [32m200[39m in 63ms
+ [32m[1m✓[22m[39m Compiled in 120ms (463 modules)
+ GET /reservations [32m200[39m in 43ms
+ [32m[1m✓[22m[39m Compiled in 88ms (463 modules)
+ GET /reservations [32m200[39m in 39ms
+ [32m[1m✓[22m[39m Compiled in 99ms (463 modules)
+ GET /reservations [32m200[39m in 58ms
+ [32m[1m✓[22m[39m Compiled in 137ms (463 modules)
+ GET /reservations [32m200[39m in 42ms
+ [32m[1m✓[22m[39m Compiled in 102ms (463 modules)
+ GET /reservations [32m200[39m in 41ms
+ [32m[1m✓[22m[39m Compiled in 106ms (463 modules)
+ GET /reservations [32m200[39m in 36ms
+ [32m[1m✓[22m[39m Compiled in 94ms (463 modules)
+ GET /reservations [32m200[39m in 34ms
+ [32m[1m✓[22m[39m Compiled in 92ms (463 modules)
+ GET /reservations [32m200[39m in 47ms
+ [32m[1m✓[22m[39m Compiled in 81ms (463 modules)
+ GET /reservations [32m200[39m in 34ms
+ [32m[1m✓[22m[39m Compiled in 87ms (463 modules)
+ GET /reservations [32m200[39m in 34ms
+ [32m[1m✓[22m[39m Compiled in 96ms (463 modules)
+ GET /reservations [32m200[39m in 50ms
+ [32m[1m✓[22m[39m Compiled in 134ms (463 modules)
+ GET /reservations [32m200[39m in 49ms
+ [32m[1m✓[22m[39m Compiled in 214ms (463 modules)
+ GET /reservations [32m200[39m in 83ms
+ [32m[1m✓[22m[39m Compiled in 111ms (463 modules)
+ GET /reservations [32m200[39m in 44ms
+ [32m[1m✓[22m[39m Compiled in 106ms (463 modules)
+ GET /reservations [32m200[39m in 46ms
+ [32m[1m✓[22m[39m Compiled in 120ms (463 modules)
+ GET /reservations [32m200[39m in 45ms
+ [32m[1m✓[22m[39m Compiled in 83ms (463 modules)
+ GET /reservations [32m200[39m in 36ms
+ [32m[1m✓[22m[39m Compiled in 86ms (463 modules)
+ GET /reservations [32m200[39m in 38ms
+ [32m[1m✓[22m[39m Compiled in 102ms (463 modules)
+ GET /reservations [32m200[39m in 33ms
+ [32m[1m✓[22m[39m Compiled in 108ms (463 modules)
+ GET /reservations [32m200[39m in 42ms
+ [32m[1m✓[22m[39m Compiled in 115ms (463 modules)
+ GET /reservations [32m200[39m in 47ms
+ [32m[1m✓[22m[39m Compiled in 90ms (463 modules)
+ GET /reservations [32m200[39m in 38ms
+ [32m[1m✓[22m[39m Compiled in 90ms (463 modules)
+ GET /reservations [32m200[39m in 38ms
+ [32m[1m✓[22m[39m Compiled in 103ms (463 modules)
+ GET /reservations [32m200[39m in 51ms
+ [32m[1m✓[22m[39m Compiled in 163ms (463 modules)
+ GET /reservations [32m200[39m in 46ms
+ [32m[1m✓[22m[39m Compiled in 125ms (463 modules)
+ GET /reservations [32m200[39m in 54ms
+ [32m[1m✓[22m[39m Compiled in 105ms (463 modules)
+ GET /reservations [32m200[39m in 50ms
+ [32m[1m✓[22m[39m Compiled in 96ms (463 modules)
+ GET /reservations [32m200[39m in 38ms
+ [32m[1m✓[22m[39m Compiled in 89ms (463 modules)
+ GET /reservations [32m200[39m in 31ms
+ [32m[1m✓[22m[39m Compiled in 90ms (463 modules)
+ GET /reservations [32m200[39m in 41ms
+ [32m[1m✓[22m[39m Compiled in 103ms (463 modules)
+ GET /reservations [32m200[39m in 35ms
+ [32m[1m✓[22m[39m Compiled in 93ms (463 modules)
+ GET /reservations [32m200[39m in 38ms
+ [32m[1m✓[22m[39m Compiled in 99ms (463 modules)
+ GET /reservations [32m200[39m in 37ms
+ [32m[1m✓[22m[39m Compiled in 105ms (463 modules)
+ GET /reservations [32m200[39m in 82ms
+ [32m[1m✓[22m[39m Compiled in 214ms (463 modules)
+ GET /reservations [32m200[39m in 72ms
+ [32m[1m✓[22m[39m Compiled in 132ms (463 modules)
+ GET /reservations [32m200[39m in 53ms
+ [32m[1m✓[22m[39m Compiled in 101ms (463 modules)
+ GET /reservations [32m200[39m in 39ms
+ [32m[1m✓[22m[39m Compiled in 82ms (463 modules)
+ GET /reservations [32m200[39m in 32ms
+ [32m[1m✓[22m[39m Compiled in 82ms (463 modules)
+ GET /reservations [32m200[39m in 39ms
+ [32m[1m✓[22m[39m Compiled in 80ms (463 modules)
+ GET /reservations [32m200[39m in 38ms
+ [32m[1m✓[22m[39m Compiled in 110ms (463 modules)
+ GET /reservations [32m200[39m in 39ms
+ [32m[1m✓[22m[39m Compiled in 118ms (463 modules)
+ GET /reservations [32m200[39m in 57ms
+ [32m[1m✓[22m[39m Compiled in 104ms (463 modules)
+ GET /reservations [32m200[39m in 39ms
+ GET /rooms [32m200[39m in 28ms
+ GET /reservations [32m200[39m in 18ms
+ [32m[1m✓[22m[39m Compiled in 196ms (463 modules)
+ GET /reservations [32m200[39m in 75ms
+ [32m[1m✓[22m[39m Compiled in 130ms (463 modules)
+ GET /reservations [32m200[39m in 39ms
+ [32m[1m✓[22m[39m Compiled in 119ms (463 modules)
+ GET /reservations [32m200[39m in 38ms
+ [32m[1m✓[22m[39m Compiled in 102ms (463 modules)
+ GET /reservations [32m200[39m in 51ms
+ [32m[1m✓[22m[39m Compiled in 90ms (463 modules)
+ GET /reservations [32m200[39m in 44ms
+ [32m[1m✓[22m[39m Compiled in 96ms (463 modules)
+ GET /reservations [32m200[39m in 33ms
+ [32m[1m✓[22m[39m Compiled in 91ms (463 modules)
+ GET /reservations [32m200[39m in 37ms
+ [32m[1m✓[22m[39m Compiled in 87ms (463 modules)
+ GET /reservations [32m200[39m in 42ms
+ [32m[1m✓[22m[39m Compiled in 106ms (463 modules)
+ GET /reservations [32m200[39m in 41ms
+ [32m[1m✓[22m[39m Compiled in 90ms (463 modules)
+ GET /reservations [32m200[39m in 35ms
+ [32m[1m✓[22m[39m Compiled in 109ms (463 modules)
+ GET /reservations [32m200[39m in 40ms
+ [32m[1m✓[22m[39m Compiled in 110ms (463 modules)
+ GET /reservations [32m200[39m in 63ms
+ [32m[1m✓[22m[39m Compiled in 114ms (463 modules)
+ GET /reservations [32m200[39m in 52ms
+ [32m[1m✓[22m[39m Compiled in 110ms (463 modules)
+ GET /reservations [32m200[39m in 41ms
+ [32m[1m✓[22m[39m Compiled in 134ms (463 modules)
+ GET /reservations [32m200[39m in 74ms
+ [32m[1m✓[22m[39m Compiled in 90ms (463 modules)
+ GET /reservations [32m200[39m in 42ms
+ [32m[1m✓[22m[39m Compiled in 91ms (463 modules)
+ GET /reservations [32m200[39m in 35ms
+ [32m[1m✓[22m[39m Compiled in 131ms (463 modules)
+ GET /reservations [32m200[39m in 65ms
+ [32m[1m✓[22m[39m Compiled in 81ms (463 modules)
+ GET /reservations [32m200[39m in 37ms
+ [32m[1m✓[22m[39m Compiled in 87ms (463 modules)
+ GET /reservations [32m200[39m in 30ms
+ [32m[1m✓[22m[39m Compiled in 158ms (463 modules)
+ GET /reservations [32m200[39m in 84ms
+ [32m[1m✓[22m[39m Compiled in 104ms (463 modules)
+ GET /reservations [32m200[39m in 51ms
+ [32m[1m✓[22m[39m Compiled in 123ms (463 modules)
+ GET /reservations [32m200[39m in 49ms
+ [32m[1m✓[22m[39m Compiled in 105ms (463 modules)
+ GET /reservations [32m200[39m in 36ms
+ [32m[1m✓[22m[39m Compiled in 106ms (463 modules)
+ GET /reservations [32m200[39m in 48ms
+ [32m[1m✓[22m[39m Compiled in 102ms (463 modules)
+ GET /reservations [32m200[39m in 47ms
+ [32m[1m✓[22m[39m Compiled in 99ms (463 modules)
+ GET /reservations [32m200[39m in 55ms
+ GET / [32m200[39m in 30ms
+ [32m[1m✓[22m[39m Compiled in 163ms (463 modules)
+ GET / [32m200[39m in 53ms
+ [32m[1m✓[22m[39m Compiled in 154ms (463 modules)
+ GET / [32m200[39m in 55ms
+ [32m[1m✓[22m[39m Compiled in 126ms (463 modules)
+ [32m[1m✓[22m[39m Compiled in 129ms (463 modules)
+ [32m[1m✓[22m[39m Compiled in 156ms (463 modules)
+ [32m[1m✓[22m[39m Compiled in 211ms (463 modules)
+ [32m[1m✓[22m[39m Compiled in 150ms (463 modules)
+ [32m[1m✓[22m[39m Compiled in 759ms (1187 modules)
+ [32m[1m✓[22m[39m Compiled in 389ms (1187 modules)
+ [32m[1m✓[22m[39m Compiled in 345ms (1187 modules)
+ [32m[1m✓[22m[39m Compiled in 383ms (1187 modules)
+ [32m[1m✓[22m[39m Compiled in 94ms (463 modules)
+ [32m[1m✓[22m[39m Compiled in 103ms (463 modules)
+ [32m[1m✓[22m[39m Compiled in 90ms (463 modules)
+ [32m[1m✓[22m[39m Compiled in 96ms (463 modules)
+ [32m[1m✓[22m[39m Compiled in 163ms (463 modules)
+ [32m[1m✓[22m[39m Compiled in 137ms (463 modules)
+ [32m[1m✓[22m[39m Compiled in 107ms (463 modules)
+ [32m[1m✓[22m[39m Compiled in 100ms (463 modules)
+ [32m[1m✓[22m[39m Compiled in 709ms (1187 modules)
+ [32m[1m✓[22m[39m Compiled in 343ms (1187 modules)
+ [32m[1m✓[22m[39m Compiled in 365ms (1187 modules)
