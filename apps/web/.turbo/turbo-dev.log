@@ -331,3 +331,8 @@ rooms []
  [32m[1m✓[22m[39m Compiled /reservations in 414ms (1178 modules)
  GET /reservations [32m200[39m in 488ms
  GET / [32m200[39m in 28ms
+ GET /rooms [32m200[39m in 47ms
+ GET /reservations [32m200[39m in 33ms
+ GET /reservations [32m200[39m in 24ms
+rooms []
+ GET /reservations [32m200[39m in 743ms

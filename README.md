@@ -93,3 +93,9 @@ Relancer une migration/génération si besoin :
 cd apps/api
 npm run prisma:generate
 npm run prisma:migrate
+
+Run des tests : 
+
+npm run -w @acme/api test:cov -- Pour coverage des tests unitaires
+npm run -w @acme/api test     -- Pour simple tests unitaires sans coverage
+npm run -w @acme/api test:e2e -- Pour les tests d'integration

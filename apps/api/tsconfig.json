@@ -24,7 +24,7 @@
   "exclude": [
     "**/*.spec.ts",
     "test/**",
-    "jest.config.ts",
+    "jest.config.cjs",
     "jest-e2e.json"
   ]
 }

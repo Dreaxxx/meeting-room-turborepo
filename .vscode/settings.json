@@ -1,0 +1,11 @@
+{
+    "jest.rootPath": "apps/api",
+    "jest.jestCommandLine": "npx -w @acme/api jest -c apps/api/jest.config.cjs",
+    "jestrunner.jestCommand": "npx -w @acme/api jest",
+    "jestrunner.jestPathToConfig": "apps/api/jest.config.cjs",
+    "jestrunner.runOptions": {
+        "config": "apps/api/jest.config.cjs",
+        "runInBand": true
+    },
+    "jestrunner.enableCoverage": true
+}
