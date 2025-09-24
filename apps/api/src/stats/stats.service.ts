@@ -16,37 +16,25 @@ export class StatsService {
   }
 
   async topRooms(q: ViewStatsDto) {
-    const { from, to } = q;
+    const limit = q?.limit ?? 3;
 
-    const rows =
-      q.roomId
-        ? await this.prisma.$queryRaw<{ roomId: string; totalMinutes: number }[]>`
-          SELECT r."roomId" AS "roomId",
-                 SUM(EXTRACT(EPOCH FROM (r."endsAt" - r."startsAt")) / 60)::int AS "totalMinutes"
-          FROM "Reservation" r
-          WHERE r."startsAt" >= ${from}
-            AND r."endsAt"   <= ${to}
-            AND r."roomId"   = ${q.roomId}
-          GROUP BY r."roomId"
-        `
-        : await this.prisma.$queryRaw<{ roomId: string; totalMinutes: number }[]>`
-          SELECT r."roomId" AS "roomId",
-                 SUM(EXTRACT(EPOCH FROM (r."endsAt" - r."startsAt")) / 60)::int AS "totalMinutes"
-          FROM "Reservation" r
-          WHERE r."startsAt" >= ${from}
-            AND r."endsAt"   <= ${to}
-          GROUP BY r."roomId"
-        `;
+    const grouped = await this.prisma.reservation.groupBy({
+      by: ['roomId'],
+      where: q?.roomId ? { roomId: q.roomId } : undefined,
+      _count: { roomId: true, _all: true },
+      orderBy: { _count: { roomId: 'desc' } },
+      take: limit,
+    });
 
-    const roomIds = rows.map(r => r.roomId);
-    const rooms = roomIds.length
-      ? await this.prisma.room.findMany({ where: { id: { in: roomIds } } })
+    const ids = grouped.map(g => g.roomId);
+    const rooms = ids.length
+      ? await this.prisma.room.findMany({ where: { id: { in: ids } } })
       : [];
 
-    return rows.map(r => ({
-      roomId: r.roomId,
-      room: rooms.find(x => x.id === r.roomId) ?? null,
-      totalMinutes: r.totalMinutes ?? 0,
+    return grouped.map(g => ({
+      roomId: g.roomId,
+      count: g._count._all,
+      room: rooms.find(r => r.id === g.roomId) ?? null,
     }));
   }
 

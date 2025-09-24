@@ -22,9 +22,9 @@ export const api = {
     stats: {
         topRooms: (params: URLSearchParams) =>
             data<{ roomId: string; count: number; room?: Room | null }[]>(
-                http.get(`/stats/top-rooms?${params.toString()}`)
+                http.get(`/stats/top-rooms`, { params }),
             ),
         avgDuration: (params: URLSearchParams) =>
-            data<{ avgMinutes: number }>(http.get(`/stats/avg-meeting-duration?${params.toString()}`)),
+            data<{ avgMinutes: number }>(http.get(`/stats/avg-meeting-duration`, { params })),
     },
 };

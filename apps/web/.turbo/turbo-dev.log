@@ -17,12 +17,598 @@
      · serverActions
 
  [32m[1m✓[22m[39m Starting...
- [32m[1m✓[22m[39m Ready in 1533ms
+ [32m[1m✓[22m[39m Ready in 1637ms
  [37m[1m○[22m[39m Compiling / ...
- [32m[1m✓[22m[39m Compiled / in 2.2s (840 modules)
-[]
- GET / [32m200[39m in 2977ms
-(node:91599) [DEP0060] DeprecationWarning: The `util._extend` API is deprecated. Please use Object.assign() instead.
+ [32m[1m✓[22m[39m Compiled / in 3.1s (815 modules)
+ [31m[1m⨯[22m[39m ReferenceError: chart is not defined
+    at Dashboard (src/app/page.tsx:62:10)
+[0m [90m 60 |[39m
+ [90m 61 |[39m       [33m<[39m[33mdiv[39m className[33m=[39m[32m"card"[39m[33m>[39m
+[31m[1m>[22m[39m[90m 62 |[39m         {chart[33m.[39mlabels[33m.[39mlength [33m?[39m (
+ [90m    |[39m          [31m[1m^[22m[39m
+ [90m 63 |[39m           [33m<[39m[33mLine[39m data[33m=[39m{chart [36mas[39m any} [33m/[39m[33m>[39m
+ [90m 64 |[39m         ) [33m:[39m (
+ [90m 65 |[39m           [33m<[39m[33mdiv[39m[33m>[39m[33mAucune[39m donnée[33m<[39m[33m/[39m[33mdiv[39m[33m>[39m[0m {
+  digest: [32m'1412468706'[39m
+}
+ GET / [31m500[39m in 3645ms
+ [32m[1m✓[22m[39m Compiled /favicon.ico in 393ms (537 modules)
+ GET /favicon.ico [32m200[39m in 545ms
+ [32m[1m✓[22m[39m Compiled in 292ms (832 modules)
+ [31m[1m⨯[22m[39m ReferenceError: points is not defined
+    at Dashboard (src/app/page.tsx:51:7)
+[0m [90m 49 |[39m     }))[33m;[39m
+ [90m 50 |[39m     [36mreturn[39m { labels[33m,[39m datasets }[33m;[39m
+[31m[1m>[22m[39m[90m 51 |[39m   }[33m,[39m [points[33m,[39m rooms])[33m;[39m
+ [90m    |[39m       [31m[1m^[22m[39m
+ [90m 52 |[39m
+ [90m 53 |[39m   [36mreturn[39m (
+ [90m 54 |[39m     [33m<[39m[33mdiv[39m className[33m=[39m[32m"grid"[39m style[33m=[39m{{ gap[33m:[39m [35m24[39m }}[33m>[39m[0m {
+  digest: [32m'3848033553'[39m
+}
+ GET / [31m500[39m in 361ms
+ GET /favicon.ico [32m200[39m in 22ms
+ [32m[1m✓[22m[39m Compiled in 256ms (832 modules)
+ [31m[1m⨯[22m[39m ReferenceError: points is not defined
+    at Dashboard (src/app/page.tsx:51:7)
+[0m [90m 49 |[39m     }))[33m;[39m
+ [90m 50 |[39m     [36mreturn[39m { labels[33m,[39m datasets }[33m;[39m
+[31m[1m>[22m[39m[90m 51 |[39m   }[33m,[39m [points[33m,[39m rooms])[33m;[39m
+ [90m    |[39m       [31m[1m^[22m[39m
+ [90m 52 |[39m
+ [90m 53 |[39m   [36mreturn[39m (
+ [90m 54 |[39m     [33m<[39m[33mdiv[39m className[33m=[39m[32m"grid"[39m style[33m=[39m{{ gap[33m:[39m [35m24[39m }}[33m>[39m[0m {
+  digest: [32m'3848033553'[39m
+}
+ GET / [31m500[39m in 271ms
+ GET /favicon.ico [32m200[39m in 16ms
+ [32m[1m✓[22m[39m Compiled in 262ms (832 modules)
+ GET / [32m200[39m in 197ms
+(node:94281) [DEP0060] DeprecationWarning: The `util._extend` API is deprecated. Please use Object.assign() instead.
 (Use `node --trace-deprecation ...` to show where the warning was created)
- [32m[1m✓[22m[39m Compiled /favicon.ico in 258ms (550 modules)
- GET /favicon.ico [32m200[39m in 432ms
+ GET /favicon.ico [32m200[39m in 34ms
+ [32m[1m✓[22m[39m Compiled in 230ms (832 modules)
+ GET / [32m200[39m in 82ms
+ [32m[1m✓[22m[39m Compiled in 201ms (832 modules)
+ GET / [32m200[39m in 72ms
+ [32m[1m✓[22m[39m Compiled in 182ms (832 modules)
+ GET / [32m200[39m in 75ms
+ [32m[1m✓[22m[39m Compiled in 205ms (832 modules)
+ GET / [32m200[39m in 70ms
+ [32m[1m✓[22m[39m Compiled in 98ms (295 modules)
+ GET / [32m200[39m in 39ms
+ [32m[1m✓[22m[39m Compiled in 82ms (295 modules)
+ GET / [32m200[39m in 32ms
+ [32m[1m✓[22m[39m Compiled in 80ms (295 modules)
+ GET / [32m200[39m in 44ms
+ [32m[1m✓[22m[39m Compiled in 216ms (832 modules)
+ GET / [32m200[39m in 71ms
+ [32m[1m✓[22m[39m Compiled in 177ms (832 modules)
+ GET / [32m200[39m in 71ms
+ [32m[1m✓[22m[39m Compiled in 218ms (832 modules)
+ GET / [32m200[39m in 84ms
+ GET / [32m200[39m in 200ms
+ GET /favicon.ico [32m200[39m in 23ms
+ [32m[1m✓[22m[39m Compiled in 254ms (832 modules)
+ GET / [32m200[39m in 107ms
+ [32m[1m✓[22m[39m Compiled in 225ms (815 modules)
+ GET / [32m200[39m in 260ms
+ [37m[1m○[22m[39m Compiling /_not-found ...
+ [32m[1m✓[22m[39m Compiled /_not-found in 535ms (806 modules)
+ GET /reservations [33m404[39m in 632ms
+ GET /reservations [33m404[39m in 162ms
+ GET /rooms [33m404[39m in 15ms
+ GET /rooms [33m404[39m in 40ms
+ GET / [32m200[39m in 24ms
+ [32m[1m✓[22m[39m Compiled in 213ms (820 modules)
+ GET / [32m200[39m in 120ms
+ [32m[1m✓[22m[39m Compiled in 376ms (813 modules)
+ GET / [32m200[39m in 122ms
+ [32m[1m✓[22m[39m Compiled in 195ms (813 modules)
+ GET / [32m200[39m in 76ms
+ [32m[1m✓[22m[39m Compiled in 180ms (813 modules)
+ GET / [32m200[39m in 74ms
+ [32m[1m✓[22m[39m Compiled in 190ms (813 modules)
+ GET / [32m200[39m in 79ms
+ [32m[1m✓[22m[39m Compiled in 180ms (813 modules)
+ GET / [32m200[39m in 81ms
+ [32m[1m✓[22m[39m Compiled in 69ms (294 modules)
+ GET / [32m200[39m in 47ms
+ GET / [32m200[39m in 204ms
+ [37m[1m○[22m[39m Compiling /favicon.ico ...
+ [32m[1m✓[22m[39m Compiled /favicon.ico in 516ms (536 modules)
+ GET /favicon.ico [32m200[39m in 654ms
+ GET / [32m200[39m in 230ms
+ GET /favicon.ico [32m200[39m in 11ms
+ GET / [32m200[39m in 49ms
+ GET /favicon.ico [32m200[39m in 8ms
+ [32m[1m✓[22m[39m Compiled in 444ms (813 modules)
+ GET / [32m200[39m in 170ms
+ [32m[1m✓[22m[39m Compiled in 209ms (813 modules)
+ GET / [32m200[39m in 105ms
+ GET / [32m200[39m in 203ms
+ [32m[1m✓[22m[39m Compiled /favicon.ico in 147ms (536 modules)
+ GET /favicon.ico [32m200[39m in 276ms
+ [32m[1m✓[22m[39m Compiled in 242ms (830 modules)
+ GET / [32m200[39m in 102ms
+ [32m[1m✓[22m[39m Compiled in 181ms (830 modules)
+ GET / [32m200[39m in 72ms
+ [32m[1m✓[22m[39m Compiled in 224ms (830 modules)
+ GET / [32m200[39m in 68ms
+ [32m[1m✓[22m[39m Compiled in 176ms (830 modules)
+ GET / [32m200[39m in 63ms
+ [31m[1m⨯[22m[39m ./src/app/page.tsx
+Error:   [31m×[0m Expression expected
+    ╭─[[36;1;4m/home/ldqtheone/skezi-technical-test/apps/web/src/app/page.tsx[0m:31:1]
+ [2m28[0m │ 
+ [2m29[0m │     if (roomId) params.set('roomId', roomId);
+ [2m30[0m │ 
+ [2m31[0m │     api.stats.avgDuration({ params :}).then((r: any) => setAvg(r.avgMinutes ?? 0)).catch(console.error);
+    · [35;1m                                    ─[0m
+ [2m32[0m │     const topParams = new URLSearchParams({ from: from.toISOString(), to: new Date().toISOString(), limit: '3' });
+ [2m33[0m │     api.stats.topRooms(topParams).then(setTop).catch(console.error);
+ [2m34[0m │   }, [roomId, gran]);
+    ╰────
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/app/page.tsx
+ [37m[1m○[22m[39m Compiling /_error ...
+ [31m[1m⨯[22m[39m ./src/app/page.tsx
+Error:   [31m×[0m Expression expected
+    ╭─[[36;1;4m/home/ldqtheone/skezi-technical-test/apps/web/src/app/page.tsx[0m:31:1]
+ [2m28[0m │ 
+ [2m29[0m │     if (roomId) params.set('roomId', roomId);
+ [2m30[0m │ 
+ [2m31[0m │     api.stats.avgDuration({ params :}).then((r: any) => setAvg(r.avgMinutes ?? 0)).catch(console.error);
+    · [35;1m                                    ─[0m
+ [2m32[0m │     const topParams = new URLSearchParams({ from: from.toISOString(), to: new Date().toISOString(), limit: '3' });
+ [2m33[0m │     api.stats.topRooms(topParams).then(setTop).catch(console.error);
+ [2m34[0m │   }, [roomId, gran]);
+    ╰────
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/app/page.tsx
+ GET / [31m500[39m in 3666ms
+ GET / [31m500[39m in 237ms
+ GET / [31m500[39m in 115ms
+ GET / [31m500[39m in 18ms
+ [32m[1m✓[22m[39m Compiled /_error in 376ms (1176 modules)
+ [33m[1m⚠[22m[39m Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ GET / [32m200[39m in 395ms
+ GET /favicon.ico [32m200[39m in 28ms
+ [32m[1m✓[22m[39m Compiled in 223ms (1176 modules)
+ GET / [32m200[39m in 106ms
+ [32m[1m✓[22m[39m Compiled in 211ms (1176 modules)
+ GET / [32m200[39m in 68ms
+ [32m[1m✓[22m[39m Compiled in 211ms (1176 modules)
+ GET / [32m200[39m in -139ms
+ [32m[1m✓[22m[39m Compiled in 205ms (1176 modules)
+ GET / [32m200[39m in 76ms
+ GET / [32m200[39m in 183ms
+ GET /favicon.ico [32m200[39m in 27ms
+ GET / [32m200[39m in 43ms
+ GET /favicon.ico [32m200[39m in 9ms
+ GET / [32m200[39m in 48ms
+ GET /favicon.ico [32m200[39m in 8ms
+ GET / [32m200[39m in 49ms
+ GET /favicon.ico [32m200[39m in 7ms
+ [32m[1m✓[22m[39m Compiled in 533ms (1066 modules)
+ GET / [32m200[39m in 205ms
+ [32m[1m✓[22m[39m Compiled in 250ms (1066 modules)
+ GET / [32m200[39m in 100ms
+ [32m[1m✓[22m[39m Compiled in 231ms (1066 modules)
+ GET / [32m200[39m in 53ms
+ [32m[1m✓[22m[39m Compiled in 214ms (1066 modules)
+ GET / [32m200[39m in 60ms
+ [32m[1m✓[22m[39m Compiled in 194ms (1066 modules)
+ GET / [32m200[39m in 65ms
+ [32m[1m✓[22m[39m Compiled in 257ms (1066 modules)
+ GET / [32m200[39m in 62ms
+ GET / [32m200[39m in 192ms
+ [37m[1m○[22m[39m Compiling /favicon.ico ...
+ [32m[1m✓[22m[39m Compiled /favicon.ico in 595ms (632 modules)
+ GET /favicon.ico [32m200[39m in 709ms
+ [32m[1m✓[22m[39m Compiled in 292ms (1083 modules)
+ GET / [32m200[39m in 108ms
+ [32m[1m✓[22m[39m Compiled in 313ms (1083 modules)
+ GET / [32m200[39m in 100ms
+ GET / [32m200[39m in 191ms
+ GET /favicon.ico [32m200[39m in 24ms
+ [32m[1m✓[22m[39m Compiled in 315ms (1083 modules)
+ GET / [32m200[39m in 73ms
+ [32m[1m✓[22m[39m Compiled in 240ms (1083 modules)
+ GET / [32m200[39m in 55ms
+ GET / [32m200[39m in 150ms
+ GET /favicon.ico [32m200[39m in 12ms
+ [32m[1m✓[22m[39m Compiled in 247ms (1083 modules)
+ GET / [32m200[39m in 71ms
+ [32m[1m✓[22m[39m Compiled in 249ms (1083 modules)
+ GET / [32m200[39m in 51ms
+ [32m[1m✓[22m[39m Compiled in 213ms (1083 modules)
+ GET / [32m200[39m in 56ms
+ [32m[1m✓[22m[39m Compiled in 347ms (1083 modules)
+ GET / [32m200[39m in 93ms
+ [32m[1m✓[22m[39m Compiled in 250ms (1066 modules)
+ GET / [32m200[39m in 19ms
+ [32m[1m✓[22m[39m Compiled in 262ms (1066 modules)
+ GET / [32m200[39m in 92ms
+ [32m[1m✓[22m[39m Compiled in 229ms (1066 modules)
+ GET / [32m200[39m in 47ms
+ [32m[1m✓[22m[39m Compiled in 204ms (1066 modules)
+ GET / [32m200[39m in 84ms
+ [32m[1m✓[22m[39m Compiled in 228ms (1066 modules)
+ GET / [32m200[39m in 51ms
+ [32m[1m✓[22m[39m Compiled in 280ms (1066 modules)
+ GET / [32m200[39m in 66ms
+ [32m[1m✓[22m[39m Compiled in 223ms (1066 modules)
+ GET / [32m200[39m in 81ms
+ [32m[1m✓[22m[39m Compiled in 251ms (1066 modules)
+ GET / [32m200[39m in 55ms
+ [32m[1m✓[22m[39m Compiled in 237ms (1066 modules)
+ GET / [32m200[39m in 63ms
+ GET / [32m200[39m in 201ms
+ [32m[1m✓[22m[39m Compiled /favicon.ico in 150ms (632 modules)
+ GET /favicon.ico [32m200[39m in 282ms
+ [31m[1m⨯[22m[39m ./src/app/lib/api.ts
+Error:   [31m×[0m Expression expected
+    ╭─[[36;1;4m/home/ldqtheone/skezi-technical-test/apps/web/src/app/lib/api.ts[0m:25:1]
+ [2m22[0m │     stats: {
+ [2m23[0m │         topRooms: (params: URLSearchParams) =>
+ [2m24[0m │             data<{ roomId: string; count: number; room?: Room | null }[]>(
+ [2m25[0m │                 http.get(`/stats/top-rooms`, { params:  }),
+    · [35;1m                                                        ─[0m
+ [2m26[0m │             ),
+ [2m27[0m │         avgDuration: (params: URLSearchParams) =>
+ [2m28[0m │             data<{ avgMinutes: number }>(http.get(`/stats/avg-meeting-duration`, { params })),
+    ╰────
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/app/lib/api.ts
+./src/app/page.tsx
+ [32m[1m✓[22m[39m Compiled in 248ms (1066 modules)
+ GET / [32m200[39m in 170ms
+ [32m[1m✓[22m[39m Compiled in 218ms (1066 modules)
+ GET / [32m200[39m in 99ms
+ [32m[1m✓[22m[39m Compiled in 246ms (1066 modules)
+ GET / [32m200[39m in 53ms
+ [32m[1m✓[22m[39m Compiled in 201ms (1066 modules)
+ GET / [32m200[39m in 60ms
+ [32m[1m✓[22m[39m Compiled in 215ms (1066 modules)
+ GET / [32m200[39m in 50ms
+ [32m[1m✓[22m[39m Compiled in 198ms (1066 modules)
+ GET / [32m200[39m in 52ms
+ [32m[1m✓[22m[39m Compiled in 196ms (1066 modules)
+ GET / [32m200[39m in 58ms
+ [32m[1m✓[22m[39m Compiled in 214ms (1066 modules)
+ GET / [32m200[39m in 51ms
+ [32m[1m✓[22m[39m Compiled in 236ms (1066 modules)
+ GET / [32m200[39m in 71ms
+ GET / [32m200[39m in 209ms
+ [37m[1m○[22m[39m Compiling /favicon.ico ...
+ [32m[1m✓[22m[39m Compiled /favicon.ico in 595ms (632 modules)
+ GET /favicon.ico [32m200[39m in 759ms
+ [31m[1m⨯[22m[39m ./src/app/lib/api.ts
+Error:   [31m×[0m Expected ',', got ':'
+    ╭─[[36;1;4m/home/ldqtheone/skezi-technical-test/apps/web/src/app/lib/api.ts[0m:28:1]
+ [2m25[0m │                 http.get(`/stats/top-rooms`, {
+ [2m26[0m │                     params: {
+ [2m27[0m │                         from: params.
+ [2m28[0m │                         to: params.get('to') || undefined,
+    · [35;1m                          ─[0m
+ [2m29[0m │                         limit: params.get('limit') ? Number(params.get('limit')) : 3,
+ [2m30[0m │                     }
+ [2m31[0m │                 }),
+    ╰────
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/app/lib/api.ts
+./src/app/page.tsx
+ [31m[1m⨯[22m[39m ./src/app/lib/api.ts
+Error:   [31m×[0m Expected ',', got 'to'
+    ╭─[[36;1;4m/home/ldqtheone/skezi-technical-test/apps/web/src/app/lib/api.ts[0m:28:1]
+ [2m25[0m │                 http.get(`/stats/top-rooms`, {
+ [2m26[0m │                     params: {
+ [2m27[0m │                         from: params
+ [2m28[0m │                         to: params.get('to') || undefined,
+    · [35;1m                        ──[0m
+ [2m29[0m │                         limit: params.get('limit') ? Number(params.get('limit')) : 3,
+ [2m30[0m │                     }
+ [2m31[0m │                 }),
+    ╰────
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/app/lib/api.ts
+./src/app/page.tsx
+ [33m[1m⚠[22m[39m Fast Refresh had to perform a full reload due to a runtime error.
+ [32m[1m✓[22m[39m Compiled in 267ms (1083 modules)
+ GET / [32m200[39m in 508ms
+ GET /favicon.ico [32m200[39m in 19ms
+ [31m[1m⨯[22m[39m ./src/app/lib/api.ts
+Error:   [31m×[0m Expected ',', got 'to'
+    ╭─[[36;1;4m/home/ldqtheone/skezi-technical-test/apps/web/src/app/lib/api.ts[0m:28:1]
+ [2m25[0m │                 http.get(`/stats/top-rooms`, {
+ [2m26[0m │                     params: {
+ [2m27[0m │                         from: params.fr
+ [2m28[0m │                         to: params.get('to') || undefined,
+    · [35;1m                        ──[0m
+ [2m29[0m │                         limit: params.get('limit') ? Number(params.get('limit')) : 3,
+ [2m30[0m │                     }
+ [2m31[0m │                 }),
+    ╰────
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/app/lib/api.ts
+./src/app/page.tsx
+ [31m[1m⨯[22m[39m ./src/app/lib/api.ts
+Error:   [31m×[0m Expected ',', got 'to'
+    ╭─[[36;1;4m/home/ldqtheone/skezi-technical-test/apps/web/src/app/lib/api.ts[0m:28:1]
+ [2m25[0m │                 http.get(`/stats/top-rooms`, {
+ [2m26[0m │                     params: {
+ [2m27[0m │                         from: params.from
+ [2m28[0m │                         to: params.get('to') || undefined,
+    · [35;1m                        ──[0m
+ [2m29[0m │                         limit: params.get('limit') ? Number(params.get('limit')) : 3,
+ [2m30[0m │                     }
+ [2m31[0m │                 }),
+    ╰────
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/app/lib/api.ts
+./src/app/page.tsx
+ [33m[1m⚠[22m[39m Fast Refresh had to perform a full reload due to a runtime error.
+ [32m[1m✓[22m[39m Compiled in 278ms (1083 modules)
+ GET / [32m200[39m in 479ms
+ GET /favicon.ico [32m200[39m in 16ms
+ [31m[1m⨯[22m[39m ./src/app/lib/api.ts
+Error:   [31m×[0m Expected ',', got ':'
+    ╭─[[36;1;4m/home/ldqtheone/skezi-technical-test/apps/web/src/app/lib/api.ts[0m:28:1]
+ [2m25[0m │                 http.get(`/stats/top-rooms`, {
+ [2m26[0m │                     params: {
+ [2m27[0m │                         from: params.
+ [2m28[0m │                         to: params.get('to') || undefined,
+    · [35;1m                          ─[0m
+ [2m29[0m │                         limit: params.get('limit') ? Number(params.get('limit')) : 3,
+ [2m30[0m │                     }
+ [2m31[0m │                 }),
+    ╰────
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/app/lib/api.ts
+./src/app/page.tsx
+ [31m[1m⨯[22m[39m ./src/app/lib/api.ts
+Error:   [31m×[0m Expected ',', got 'to'
+    ╭─[[36;1;4m/home/ldqtheone/skezi-technical-test/apps/web/src/app/lib/api.ts[0m:28:1]
+ [2m25[0m │                 http.get(`/stats/top-rooms`, {
+ [2m26[0m │                     params: {
+ [2m27[0m │                         from: params.values
+ [2m28[0m │                         to: params.get('to') || undefined,
+    · [35;1m                        ──[0m
+ [2m29[0m │                         limit: params.get('limit') ? Number(params.get('limit')) : 3,
+ [2m30[0m │                     }
+ [2m31[0m │                 }),
+    ╰────
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/app/lib/api.ts
+./src/app/page.tsx
+ [31m[1m⨯[22m[39m ./src/app/lib/api.ts
+Error:   [31m×[0m Expected ',', got ':'
+    ╭─[[36;1;4m/home/ldqtheone/skezi-technical-test/apps/web/src/app/lib/api.ts[0m:28:1]
+ [2m25[0m │                 http.get(`/stats/top-rooms`, {
+ [2m26[0m │                     params: {
+ [2m27[0m │                         from: params.values.
+ [2m28[0m │                         to: params.get('to') || undefined,
+    · [35;1m                          ─[0m
+ [2m29[0m │                         limit: params.get('limit') ? Number(params.get('limit')) : 3,
+ [2m30[0m │                     }
+ [2m31[0m │                 }),
+    ╰────
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/app/lib/api.ts
+./src/app/page.tsx
+ [31m[1m⨯[22m[39m ./src/app/lib/api.ts
+Error:   [31m×[0m Expected ',', got 'to'
+    ╭─[[36;1;4m/home/ldqtheone/skezi-technical-test/apps/web/src/app/lib/api.ts[0m:28:1]
+ [2m25[0m │                 http.get(`/stats/top-rooms`, {
+ [2m26[0m │                     params: {
+ [2m27[0m │                         from: params.values
+ [2m28[0m │                         to: params.get('to') || undefined,
+    · [35;1m                        ──[0m
+ [2m29[0m │                         limit: params.get('limit') ? Number(params.get('limit')) : 3,
+ [2m30[0m │                     }
+ [2m31[0m │                 }),
+    ╰────
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/app/lib/api.ts
+./src/app/page.tsx
+ [31m[1m⨯[22m[39m ./src/app/lib/api.ts
+Error:   [31m×[0m Expected ',', got 'to'
+    ╭─[[36;1;4m/home/ldqtheone/skezi-technical-test/apps/web/src/app/lib/api.ts[0m:28:1]
+ [2m25[0m │                 http.get(`/stats/top-rooms`, {
+ [2m26[0m │                     params: {
+ [2m27[0m │                         from: params.values
+ [2m28[0m │                         to: params.get('to') || undefined,
+    · [35;1m                        ──[0m
+ [2m29[0m │                         limit: params.get('limit') ? Number(params.get('limit')) : 3,
+ [2m30[0m │                     }
+ [2m31[0m │                 }),
+    ╰────
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/app/lib/api.ts
+./src/app/page.tsx
+ [33m[1m⚠[22m[39m Fast Refresh had to perform a full reload due to a runtime error.
+ [32m[1m✓[22m[39m Compiled in 872ms (1083 modules)
+ GET / [32m200[39m in 934ms
+ GET /favicon.ico [32m200[39m in 27ms
+ [32m[1m✓[22m[39m Compiled in 273ms (451 modules)
+ GET / [32m200[39m in 128ms
+ GET /favicon.ico [32m200[39m in 9ms
+ [32m[1m✓[22m[39m Compiled in 113ms (451 modules)
+ GET / [32m200[39m in 55ms
+ GET /favicon.ico [32m200[39m in 10ms
+ [32m[1m✓[22m[39m Compiled in 109ms (451 modules)
+ [33m[1m⚠[22m[39m Fast Refresh had to perform a full reload due to a runtime error.
+ GET / [32m200[39m in 60ms
+ GET /favicon.ico [32m200[39m in 7ms
+ [32m[1m✓[22m[39m Compiled in 78ms (451 modules)
+ GET / [32m200[39m in 56ms
+ GET /favicon.ico [32m200[39m in 10ms
+ [32m[1m✓[22m[39m Compiled in 83ms (451 modules)
+ GET / [32m200[39m in 56ms
+ [32m[1m✓[22m[39m Compiled in 108ms (451 modules)
+ GET /favicon.ico [32m200[39m in 8ms
+ [33m[1m⚠[22m[39m Fast Refresh had to perform a full reload due to a runtime error.
+ [32m[1m✓[22m[39m Compiled in 502ms (1083 modules)
+ GET / [32m200[39m in 696ms
+ GET /favicon.ico [32m200[39m in 20ms
+ [33m[1m⚠[22m[39m Fast Refresh had to perform a full reload due to a runtime error.
+ [32m[1m✓[22m[39m Compiled in 233ms (1085 modules)
+ GET / [32m200[39m in 325ms
+ GET /favicon.ico [32m200[39m in 18ms
+ [33m[1m⚠[22m[39m Fast Refresh had to perform a full reload due to a runtime error.
+ [32m[1m✓[22m[39m Compiled in 236ms (1085 modules)
+ GET / [32m200[39m in 125ms
+ GET /favicon.ico [32m200[39m in 12ms
+ GET / [32m200[39m in 45ms
+ GET /favicon.ico [32m200[39m in 11ms
+ [33m[1m⚠[22m[39m Fast Refresh had to perform a full reload due to a runtime error.
+ [32m[1m✓[22m[39m Compiled in 272ms (1085 modules)
+ GET / [32m200[39m in 495ms
+ GET /favicon.ico [32m200[39m in 13ms
+ [33m[1m⚠[22m[39m Fast Refresh had to perform a full reload due to a runtime error.
+ [32m[1m✓[22m[39m Compiled in 250ms (1085 modules)
+ GET / [32m200[39m in 350ms
+ GET /favicon.ico [32m200[39m in 17ms
+ [32m[1m✓[22m[39m Compiled in 9ms (1085 modules)
+ GET / [32m200[39m in 51ms
+ [32m[1m✓[22m[39m Compiled in 191ms (1085 modules)
+ GET / [32m200[39m in 166ms
+ [32m[1m✓[22m[39m Compiled in 310ms (1085 modules)
+ GET / [32m200[39m in 65ms
+ GET /favicon.ico [32m200[39m in 15ms
+ GET /favicon.ico [32m200[39m in 14ms
+ GET / [32m200[39m in 111ms
+ GET /favicon.ico [32m200[39m in 15ms
+ [32m[1m✓[22m[39m Compiled /_not-found in 452ms (1076 modules)
+ GET /rooms [33m404[39m in 553ms
+ GET /rooms [33m404[39m in 83ms
+ GET / [32m200[39m in 91ms
+ [32m[1m✓[22m[39m Compiled in 352ms (1088 modules)
+ GET / [32m200[39m in 81ms
+ [31m[1m⨯[22m[39m ./src/app/lib/api.ts
+Error:   [31m×[0m Expected ',', got ':'
+    ╭─[[36;1;4m/home/ldqtheone/skezi-technical-test/apps/web/src/app/lib/api.ts[0m:28:1]
+ [2m25[0m │                 http.get(`/stats/top-rooms`, {
+ [2m26[0m │                     params: {
+ [2m27[0m │                         from: params.
+ [2m28[0m │                         to: params.get('to') || undefined,
+    · [35;1m                          ─[0m
+ [2m29[0m │                         limit: params.get('limit') ? Number(params.get('limit')) : 3,
+ [2m30[0m │                     }
+ [2m31[0m │                 }),
+    ╰────
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/app/lib/api.ts
+./src/app/page.tsx
+ [31m[1m⨯[22m[39m ./src/app/lib/api.ts
+Error:   [31m×[0m Expression expected
+    ╭─[[36;1;4m/home/ldqtheone/skezi-technical-test/apps/web/src/app/lib/api.ts[0m:25:1]
+ [2m22[0m │     stats: {
+ [2m23[0m │         topRooms: (params: URLSearchParams) =>
+ [2m24[0m │             data<{ roomId: string; count: number; room?: Room | null }[]>(
+ [2m25[0m │                 http.get(`/stats/top-rooms`, { params: }),
+    · [35;1m                                                       ─[0m
+ [2m26[0m │             ),
+ [2m27[0m │         avgDuration: (params: URLSearchParams) =>
+ [2m28[0m │             data<{ avgMinutes: number }>(http.get(`/stats/avg-meeting-duration`, { params })),
+    ╰────
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/app/lib/api.ts
+./src/app/page.tsx
+ [32m[1m✓[22m[39m Compiled in 361ms (1088 modules)
+ GET / [32m200[39m in 71ms
+ [32m[1m✓[22m[39m Compiled in 113ms (455 modules)
+ GET / [32m200[39m in 38ms
+ [32m[1m✓[22m[39m Compiled in 541ms (1066 modules)
+ GET / [32m200[39m in 254ms
+ [32m[1m✓[22m[39m Compiled in 233ms (1066 modules)
+ GET / [32m200[39m in 111ms
+ [32m[1m✓[22m[39m Compiled in 444ms (1066 modules)
+ GET / [32m200[39m in 120ms
+ [32m[1m✓[22m[39m Compiled in 235ms (1066 modules)
+ GET / [32m200[39m in 74ms
+ [32m[1m✓[22m[39m Compiled in 216ms (1066 modules)
+ GET / [32m200[39m in 67ms
+ [32m[1m✓[22m[39m Compiled in 435ms (1066 modules)
+ GET / [32m200[39m in 78ms
+ GET / [32m200[39m in 196ms
+ [32m[1m✓[22m[39m Compiled /favicon.ico in 331ms (632 modules)
+ GET /favicon.ico [32m200[39m in 464ms
+ GET / [32m200[39m in 345ms
+ GET /favicon.ico [32m200[39m in 9ms
+ GET / [32m200[39m in 52ms
+ GET /favicon.ico [32m200[39m in 12ms
+ GET / [32m200[39m in 52ms
+ GET /favicon.ico [32m200[39m in 10ms
+ GET / [32m200[39m in 47ms
+ GET /favicon.ico [32m200[39m in 8ms
+ [37m[1m○[22m[39m Compiling /_not-found ...
+ [32m[1m✓[22m[39m Compiled /_not-found in 602ms (1074 modules)
+ GET /rooms [33m404[39m in 744ms
+ GET /rooms [33m404[39m in 119ms
+ GET / [32m200[39m in 88ms
+ GET / [32m200[39m in 60ms
+ GET /favicon.ico [32m200[39m in 47ms
+ GET / [32m200[39m in 71ms
+ GET /favicon.ico [32m200[39m in 18ms
+ GET / [32m200[39m in 54ms
+ GET /favicon.ico [32m200[39m in 11ms
+ GET / [32m200[39m in 58ms
+ GET /favicon.ico [32m200[39m in 10ms
