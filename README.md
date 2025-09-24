@@ -1,4 +1,4 @@
-Skezi Tech Test — Monorepo (Turborepo)
+Meeting Rooms — Monorepo (Turborepo)
 
 Prérequis
 
@@ -9,8 +9,8 @@ npm 10+
 PostgreSQL qui tourne via Docker (donc docker)
 
 1) Cloner & installer
-git clone git@github.com:Dreaxxx/skezi-technical-test.git
-cd skezi-technical-test
+git clone git@github.com:Dreaxxx/meeting-room-turborepo.git
+cd meeting-room-turborepo
 
 # Installe toutes les dépendances des apps & packages
 npm install (à la racine, sa lancera dans les 2 apps)

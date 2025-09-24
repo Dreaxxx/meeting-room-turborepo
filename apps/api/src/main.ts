@@ -12,7 +12,7 @@ async function bootstrap() {
 
   const config = new DocumentBuilder()
     .setTitle('Meeting Rooms API')
-    .setDescription('API test Skezi - Meeting Rooms')
+    .setDescription('API Documentation - Meeting Rooms')
     .setVersion('1.0.0')
     .build();
 
