@@ -2,7 +2,6 @@
 
 import { useRooms } from '@/app/lib/hooks/useRooms';
 import { Field } from './Field';
-import EmptyDiv from './EmptyDiv';
 
 type Props = {
   value: string;

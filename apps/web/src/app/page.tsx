@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useMemo, useState } from 'react';
+import { useEffect, useState } from 'react';
 import {
   Chart as ChartJS,
   LineElement,
@@ -22,7 +22,7 @@ import { KPI } from '@/components/KPI';
 ChartJS.register(LineElement, CategoryScale, LinearScale, PointElement, Tooltip, Legend);
 
 export default function Dashboard() {
-  const [rooms, setRooms] = useState<Room[]>([]);
+  const [, setRooms] = useState<Room[]>([]);
   const [avg, setAvg] = useState<number>(0);
   const [top, setTop] = useState<{ roomId: string; count: number; room?: Room | null }[]>([]);
   const [roomId, setRoomId] = useState<string>('');
@@ -41,7 +41,7 @@ export default function Dashboard() {
 
     api.stats
       .avgDuration(params)
-      .then((r: any) => setAvg(r.avgMinutes ?? 0))
+      .then((r) => setAvg(r.avgMinutes ?? 0))
       .catch(console.error);
 
     const topParams = new URLSearchParams({
@@ -61,7 +61,11 @@ export default function Dashboard() {
         <ControlsBar>
           <RoomSelector value={roomId} onChange={setRoomId} includeAll />
           <Field label="Granularité">
-            <select className="input" value={gran} onChange={(e) => setGran(e.target.value as any)}>
+            <select
+              className="input"
+              value={gran}
+              onChange={(e) => setGran(e.target.value as 'daily' | 'weekly' | 'monthly')}
+            >
               <option value="daily">Journalier</option>
               <option value="weekly">Hebdomadaire</option>
               <option value="monthly">Mensuel</option>
