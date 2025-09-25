@@ -4,9 +4,9 @@ import { useEffect, type ReactNode } from 'react';
 import { bootstrapAuth } from './lib/auth';
 
 export default function Providers({ children }: { children: ReactNode }) {
-    useEffect(() => {
-        bootstrapAuth();
-    }, []);
+  useEffect(() => {
+    bootstrapAuth();
+  }, []);
 
-    return <>{children}</>;
+  return <>{children}</>;
 }

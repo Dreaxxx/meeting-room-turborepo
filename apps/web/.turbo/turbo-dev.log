@@ -224,3 +224,88 @@ Import trace for requested module:
  GET / [32m200[39m in 154ms
  [32m[1m✓[22m[39m Compiled in 302ms (1101 modules)
  GET / [32m200[39m in 93ms
+ [32m[1m✓[22m[39m Compiled in 771ms (1101 modules)
+ GET / [32m200[39m in 180ms
+ [32m[1m✓[22m[39m Compiled in 318ms (1101 modules)
+ GET / [32m200[39m in 120ms
+ [31m[1m⨯[22m[39m ./src/app/auth/page.tsx
+Error:   [31m×[0m Unexpected token `)`. Expected an identifier, void, yield, null, await, break, a string literal, a numeric literal, true, false, `, -, import, this, typeof, {, [, (
+    ╭─[[36;1;4m/home/ldqtheone/skezi-technical-test/apps/web/src/app/auth/page.tsx[0m:49:1]
+ [2m46[0m │         setMsg('Compte créé ✅ Vous pouvez vous connecter.');
+ [2m47[0m │         setMode('login');
+ [2m48[0m │       }
+ [2m49[0m │     } catch (e: ) {
+    · [35;1m                ─[0m
+ [2m50[0m │       const apiMessage =
+ [2m51[0m │         e?.response?.data?.message || e?.response?.data?.error || e?.message || 'Erreur inconnue';
+ [2m52[0m │       setErr(Array.isArray(apiMessage) ? apiMessage.join(', ') : String(apiMessage));
+    ╰────
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/app/auth/page.tsx
+ [37m[1m○[22m[39m Compiling /_error ...
+ [31m[1m⨯[22m[39m ./src/app/auth/page.tsx
+Error:   [31m×[0m Unexpected token `)`. Expected an identifier, void, yield, null, await, break, a string literal, a numeric literal, true, false, `, -, import, this, typeof, {, [, (
+    ╭─[[36;1;4m/home/ldqtheone/skezi-technical-test/apps/web/src/app/auth/page.tsx[0m:49:1]
+ [2m46[0m │         setMsg('Compte créé ✅ Vous pouvez vous connecter.');
+ [2m47[0m │         setMode('login');
+ [2m48[0m │       }
+ [2m49[0m │     } catch (e: ) {
+    · [35;1m                ─[0m
+ [2m50[0m │       const apiMessage =
+ [2m51[0m │         e?.response?.data?.message || e?.response?.data?.error || e?.message || 'Erreur inconnue';
+ [2m52[0m │       setErr(Array.isArray(apiMessage) ? apiMessage.join(', ') : String(apiMessage));
+    ╰────
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/app/auth/page.tsx
+ GET / [31m500[39m in 632ms
+ GET / [31m500[39m in 21ms
+ [32m[1m✓[22m[39m Compiled /_error in 330ms (1194 modules)
+rooms []
+ [33m[1m⚠[22m[39m Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ GET / [32m200[39m in 412ms
+ [32m[1m✓[22m[39m Compiled in 258ms (1194 modules)
+ GET / [32m200[39m in 108ms
+ [31m[1m⨯[22m[39m ./src/app/auth/page.tsx
+Error:   [31m×[0m Expected '(', got 'const'
+    ╭─[[36;1;4m/home/ldqtheone/skezi-technical-test/apps/web/src/app/auth/page.tsx[0m:51:1]
+ [2m48[0m │       }
+ [2m49[0m │     } catch (e: unknown) {
+ [2m50[0m │         if
+ [2m51[0m │       const apiMessage =
+    · [35;1m      ─────[0m
+ [2m52[0m │         e?.response?.data?.message || e?.response?.data?.error || e?.message || 'Erreur inconnue';
+ [2m53[0m │       setErr(Array.isArray(apiMessage) ? apiMessage.join(', ') : String(apiMessage));
+ [2m54[0m │     } finally {
+    ╰────
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/app/auth/page.tsx
+ GET / [31m500[39m in 22ms
+ GET / [31m500[39m in 23ms
+ [32m[1m✓[22m[39m Compiled in 330ms (1194 modules)
+rooms []
+ [33m[1m⚠[22m[39m Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ GET / [32m200[39m in 436ms
+ [32m[1m✓[22m[39m Compiled in 265ms (1194 modules)
+ GET / [32m200[39m in 79ms
+ [32m[1m✓[22m[39m Compiled in 303ms (1194 modules)
+ GET / [32m200[39m in 66ms
+ [32m[1m✓[22m[39m Compiled in 268ms (1194 modules)
+ GET / [32m200[39m in 69ms
+ [32m[1m✓[22m[39m Compiled in 300ms (1194 modules)
+ GET / [32m200[39m in 79ms
+ [32m[1m✓[22m[39m Compiled in 266ms (1194 modules)
+ GET / [32m200[39m in 70ms
+ [32m[1m✓[22m[39m Compiled in 293ms (1194 modules)
+ GET / [32m200[39m in 74ms
