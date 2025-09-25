@@ -17,13 +17,4 @@
      · serverActions
 
  [32m[1m✓[22m[39m Starting...
- [32m[1m✓[22m[39m Ready in 1852ms
- [37m[1m○[22m[39m Compiling /rooms ...
- [32m[1m✓[22m[39m Compiled /rooms in 1792ms (815 modules)
- GET /rooms [32m200[39m in 2531ms
-(node:16820) [DEP0060] DeprecationWarning: The `util._extend` API is deprecated. Please use Object.assign() instead.
-(Use `node --trace-deprecation ...` to show where the warning was created)
- [32m[1m✓[22m[39m Compiled /favicon.ico in 278ms (537 modules)
- GET /favicon.ico [32m200[39m in 432ms
- [32m[1m✓[22m[39m Compiled in 551ms (815 modules)
- GET /rooms [32m200[39m in 216ms
+ [32m[1m✓[22m[39m Ready in 1759ms

@@ -15,6 +15,15 @@ async function bootstrap() {
     .setTitle('Meeting Rooms API')
     .setDescription('API Documentation - Meeting Rooms')
     .setVersion('1.0.0')
+    .addBearerAuth(
+      {
+        type: 'http',
+        scheme: 'bearer',
+        bearerFormat: 'JWT',
+        in: 'header',
+      },
+      'JWT-auth',
+    )
     .build();
 
   const document = SwaggerModule.createDocument(app, config, {
