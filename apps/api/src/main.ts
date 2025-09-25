@@ -43,6 +43,7 @@ async function bootstrap() {
     origin: [process.env.CORS_ORIGIN ?? '*'],
     methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'OPTIONS'],
     credentials: false,
+    allowedHeaders: ['Content-Type', 'Authorization'],
   });
 
   const port = process.env.PORT ?? 3001;
