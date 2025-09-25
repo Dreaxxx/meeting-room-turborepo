@@ -7,6 +7,7 @@ import { PrismaService } from '../src/prisma/prisma.service';
 describe('API (e2e)', () => {
   let app: INestApplication;
   let prisma: PrismaService;
+  let token: string;
 
   beforeAll(async () => {
     const moduleRef = await Test.createTestingModule({
@@ -26,10 +27,26 @@ describe('API (e2e)', () => {
     await app.close();
   });
 
+  it('signup + login -> récupère un token', async () => {
+    await request(app.getHttpServer())
+      .post('/auth/signup')
+      .send({ email: 'john@acme.com', password: 'pass1234', name: 'John Doe' })
+      .expect(201);
+
+    const { body } = await request(app.getHttpServer())
+      .post('/auth/login')
+      .send({ email: 'john@acme.com', password: 'pass1234' })
+      .expect(201);
+
+    expect(body?.accessToken).toBeTruthy();
+    token = body.accessToken;
+  });
+
   describe('rooms', () => {
     it('POST /rooms -> creates a room', async () => {
       const res = await request(app.getHttpServer())
         .post('/rooms')
+        .set('Authorization', `Bearer ${token}`)
         .send({ name: 'Orion', capacity: 4 })
         .expect(201);
       expect(res.body).toMatchObject({ name: 'Orion', capacity: 4 });
@@ -66,11 +83,13 @@ describe('API (e2e)', () => {
 
       await request(app.getHttpServer())
         .post('/reservations')
-        .send({ roomId, title: 'Reu 1', startsAt, endsAt })
+        .set('Authorization', `Bearer ${token}`)
+        .send({ roomId, title: 'Reu 1', startsAt, endsAt, userId: 'userId1234' })
         .expect(201);
 
       await request(app.getHttpServer())
         .post('/reservations')
+        .set('Authorization', `Bearer ${token}`)
         .send({ roomId, title: 'Reu 2', startsAt2, endsAt })
         .expect(400);
     });
@@ -102,6 +121,7 @@ describe('API (e2e)', () => {
 
       const res = await request(app.getHttpServer())
         .patch(`/reservations/${reservationId}`)
+        .set('Authorization', `Bearer ${token}`)
         .send({ title: 'Updated Title' })
         .expect(200);
       expect(res.body).toMatchObject({
@@ -118,6 +138,7 @@ describe('API (e2e)', () => {
 
       await request(app.getHttpServer())
         .delete(`/reservations/${reservationId}`)
+        .set('Authorization', `Bearer ${token}`)
         .expect(200);
     });
   });

@@ -43,6 +43,7 @@ describe('ReservationsService (unit)', () => {
     title: 'Reunion de test',
     startsAt: new Date('2025-11-22T09:00:00Z').toISOString(),
     endsAt: new Date('2025-11-22T10:00:00Z').toISOString(),
+    userId: 'user-1',
   };
 
   it('should findAll reservations', async () => {
