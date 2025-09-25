@@ -2,6 +2,7 @@ import { Metadata } from 'next';
 import './globals.css';
 import Link from 'next/link';
 import type { ReactNode } from 'react';
+import Providers from './providers';
 
 export const metadata: Metadata = {
   title: 'Meeting Rooms — Front',
@@ -23,9 +24,12 @@ export default function RootLayout({ children }: { children: ReactNode }) {
             <Link href="/rooms" style={{ marginRight: 12 }}>
               Salles
             </Link>
-            <Link href="/reservations">Reservations</Link>
+            <Link href="/reservations" style={{ marginRight: 12 }}>
+              Reservations
+            </Link>
+            <Link href="/auth">Connexion / Inscription</Link>
           </nav>
-          {children}
+          <Providers>{children}</Providers>
         </div>
       </body>
     </html>

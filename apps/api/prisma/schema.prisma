@@ -7,6 +7,16 @@ generator client {
   provider = "prisma-client-js"
 }
 
+model User {
+  id        String   @id @default(cuid())
+  email     String   @unique
+  password  String   
+  name      String?
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  reservations Reservation[]
+}
+
 model Room {
   id           String         @id @default(cuid())
   name         String         @unique
@@ -25,6 +35,9 @@ model Reservation {
   createdAt DateTime @default(now())
 
   room      Room     @relation(fields: [roomId], references: [id])
+
+  userId    String?
+  user      User?    @relation(fields: [userId], references: [id], onDelete: SetNull)
 
   @@index([roomId, startsAt])
   @@index([roomId, endsAt])

@@ -25,4 +25,11 @@ export class CreateReservationDto {
   })
   @IsISO8601()
   endsAt: string;
+
+  @ApiProperty({
+    example: 'userId1234name',
+  })
+  @IsString()
+  @IsNotEmpty()
+  userId: string;
 }
