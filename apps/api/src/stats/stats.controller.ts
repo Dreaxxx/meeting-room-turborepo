@@ -10,21 +10,21 @@ export class StatsController {
 
   @ApiOkResponse({ description: 'Top N des salles les plus réservées' })
   @Get('top-rooms')
-  topRooms(@Query() q: ViewStatsDto) {
-    console.log('topRooms types:', q.from as any instanceof Date, q.to as any instanceof Date, q.from, q.to);
+  topRooms(@Query() queryDto: ViewStatsDto) {
+    console.log('topRooms types:', queryDto.from as any instanceof Date, queryDto.to as any instanceof Date, queryDto.from, queryDto.to);
 
-    return this.stats.topRooms(q);
+    return this.stats.topRooms(queryDto);
   }
 
   @ApiOkResponse({ description: 'Durée moyenne des réunions' })
   @Get('avg-meeting-duration')
-  avgDuration(@Query() q: ViewStatsDto) {
-    return this.stats.avgDuration(q);
+  avgDuration(@Query() queryDto: ViewStatsDto) {
+    return this.stats.avgDuration(queryDto);
   }
 
   @ApiOkResponse({ description: 'Taux d\'occupation des salles' })
   @Get('occupancy-rate')
-  occupancyRate(@Query() q: ViewStatsDto) {
-    return this.stats.occupancyRate(q);
+  occupancyRate(@Query() queryDto: ViewStatsDto) {
+    return this.stats.occupancyRate(queryDto);
   }
 }

@@ -2,39 +2,39 @@ import { ViewStatsDto } from './dto/view-stats.dto';
 import { Injectable } from '@nestjs/common';
 import { Prisma } from '@prisma/client';
 import { PrismaService } from '../prisma/prisma.service';
-import { startOfDay, endOfDay, startOfWeekMonday, endOfWeekFriday, startOfMonth, endOfMonth } from '../helpers/date-helper';
+import { startOfDay, endOfDay, startOfWeekMonday, endOfWeekFriday, startOfMonth, endOfMonth, DateRange } from '../helpers/date-helper';
 
 @Injectable()
 export class StatsService {
   constructor(private readonly prisma: PrismaService) { }
 
-  private range(q: ViewStatsDto): { from: Date; to: Date } {
-    const base = q.from ? new Date(q.from) : new Date();
+  private range(queryDto: ViewStatsDto): DateRange {
+    const baseDay = queryDto.from ? new Date(queryDto.from) : new Date();
 
-    switch (q.granularity) {
+    switch (queryDto.granularity) {
       case 'daily': {
-        return { from: startOfDay(base), to: endOfDay(base) };
+        return { from: startOfDay(baseDay), to: endOfDay(baseDay) };
       }
       case 'weekly': {
-        return { from: startOfWeekMonday(base), to: endOfWeekFriday(base) };
+        return { from: startOfWeekMonday(baseDay), to: endOfWeekFriday(baseDay) };
       }
       case 'monthly': {
-        return { from: startOfMonth(base), to: endOfMonth(base) };
+        return { from: startOfMonth(baseDay), to: endOfMonth(baseDay) };
       }
       default: {
-        const from = q.from ? new Date(q.from) : new Date(0);
-        const to = q.to ? new Date(q.to) : new Date(8640000000000000);
+        const from = queryDto.from ? new Date(queryDto.from) : new Date(0);
+        const to = queryDto.to ? new Date(queryDto.to) : new Date(8640000000000000);
         return { from, to };
       }
     }
   }
 
-  async topRooms(q: ViewStatsDto) {
-    const limit = q?.limit ?? 3;
+  async topRooms(queryDto: ViewStatsDto) {
+    const limit = queryDto?.limit ?? 3;
 
     const grouped = await this.prisma.reservation.groupBy({
       by: ['roomId'],
-      where: q?.roomId ? { roomId: q.roomId } : undefined,
+      where: queryDto?.roomId ? { roomId: queryDto.roomId } : undefined,
       _count: { roomId: true, _all: true },
       orderBy: { _count: { roomId: 'desc' } },
       take: limit,
@@ -52,11 +52,11 @@ export class StatsService {
     }));
   }
 
-  async avgDuration(q: ViewStatsDto) {
-    const { from, to } = this.range(q);
+  async avgDuration(queryDto: ViewStatsDto) {
+    const { from, to } = this.range(queryDto);
 
-    const roomFilter = q.roomId
-      ? Prisma.sql`AND "roomId" = ${q.roomId}`
+    const roomFilter = queryDto.roomId
+      ? Prisma.sql`AND "roomId" = ${queryDto.roomId}`
       : Prisma.empty;
 
     const rows = await this.prisma.$queryRaw<{ avg_minutes: number | null }[]>(
@@ -72,16 +72,15 @@ export class StatsService {
     return { avgMinutes: rows[0]?.avg_minutes ?? 0 };
   }
 
-  async occupancyRate(q: ViewStatsDto) {
-    const { from, to } = this.range(q);
+  async occupancyRate(queryDto: ViewStatsDto) {
+    const { from, to } = this.range(queryDto);
 
-    // calcule la durée de fenêtre côté DB pour éviter tout souci de TZ côté JS
     const [win] = await this.prisma.$queryRaw<{ total_minutes: number }[]>(Prisma.sql`
     SELECT GREATEST(1, ROUND(EXTRACT(EPOCH FROM (${to}::timestamp - ${from}::timestamp)) / 60.0)) AS total_minutes
   `);
     const totalMinutes = win?.total_minutes ?? 1;
 
-    const query = Prisma.sql`
+    const prismaQuery = Prisma.sql`
     WITH bounds AS (
       SELECT ${from}::timestamp AS from_ts, ${to}::timestamp AS to_ts
     ),
@@ -93,7 +92,7 @@ export class StatsService {
       FROM "Reservation" res, bounds
       WHERE res."startsAt" < (SELECT to_ts FROM bounds)
         AND res."endsAt"   > (SELECT from_ts FROM bounds)
-        ${q.roomId ? Prisma.sql`AND res."roomId" = ${q.roomId}` : Prisma.empty}
+        ${queryDto.roomId ? Prisma.sql`AND res."roomId" = ${queryDto.roomId}` : Prisma.empty}
     )
     SELECT
       r.id AS "roomId",
@@ -104,13 +103,13 @@ export class StatsService {
       )::int AS "busyMinutes"
     FROM "Room" r
     LEFT JOIN spans o ON o."roomId" = r.id
-    ${q.roomId ? Prisma.sql`WHERE r.id = ${q.roomId}` : Prisma.empty}
+    ${queryDto.roomId ? Prisma.sql`WHERE r.id = ${queryDto.roomId}` : Prisma.empty}
     GROUP BY r.id
-    ${q.roomId ? Prisma.empty : Prisma.sql`ORDER BY "busyMinutes" DESC`}
+    ${queryDto.roomId ? Prisma.empty : Prisma.sql`ORDER BY "busyMinutes" DESC`}
   `;
 
     type Row = { roomId: string; busyMinutes: number };
-    const rows = await this.prisma.$queryRaw<Row[]>(query);
+    const rows = await this.prisma.$queryRaw<Row[]>(prismaQuery);
 
     const ids = rows.map(r => r.roomId);
     const rooms = ids.length
