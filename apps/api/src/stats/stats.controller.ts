@@ -21,4 +21,10 @@ export class StatsController {
   avgDuration(@Query() q: ViewStatsDto) {
     return this.stats.avgDuration(q);
   }
+
+  @ApiOkResponse({ description: 'Taux d\'occupation des salles' })
+  @Get('occupancy-rate')
+  occupancyRate(@Query() q: ViewStatsDto) {
+    return this.stats.occupancyRate(q);
+  }
 }
