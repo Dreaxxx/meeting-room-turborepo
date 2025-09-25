@@ -12,327 +12,630 @@
    [1m[38;2;173;127;168m▲ Next.js 15.5.4[39m[22m
    - Local:        http://localhost:3000
    - Network:      http://172.21.43.227:3000
-   - Environments: .env
+   - Environments: .env.local, .env
    - Experiments (use with caution):
      · serverActions
 
  [32m[1m✓[22m[39m Starting...
- [32m[1m✓[22m[39m Ready in 1970ms
- [37m[1m○[22m[39m Compiling / ...
- [31m[1m⨯[22m[39m ./src/app/page.tsx:4:1
-[31m[1mModule not found[22m[39m: Can't resolve '[32mchart.js[39m'
-[0m [90m 2 |[39m
- [90m 3 |[39m [36mimport[39m { useEffect[33m,[39m useMemo[33m,[39m useState } [36mfrom[39m [32m'react'[39m[33m;[39m
-[31m[1m>[22m[39m[90m 4 |[39m [36mimport[39m {
- [90m   |[39m [31m[1m^[22m[39m
- [90m 5 |[39m   [33mChart[39m [36mas[39m [33mChartJS[39m[33m,[39m
- [90m 6 |[39m   [33mLineElement[39m[33m,[39m
- [90m 7 |[39m   [33mCategoryScale[39m[33m,[39m[0m
-
-https://nextjs.org/docs/messages/module-not-found
- [31m[1m⨯[22m[39m ./src/app/page.tsx:4:1
-[31m[1mModule not found[22m[39m: Can't resolve '[32mchart.js[39m'
-[0m [90m 2 |[39m
- [90m 3 |[39m [36mimport[39m { useEffect[33m,[39m useMemo[33m,[39m useState } [36mfrom[39m [32m'react'[39m[33m;[39m
-[31m[1m>[22m[39m[90m 4 |[39m [36mimport[39m {
- [90m   |[39m [31m[1m^[22m[39m
- [90m 5 |[39m   [33mChart[39m [36mas[39m [33mChartJS[39m[33m,[39m
- [90m 6 |[39m   [33mLineElement[39m[33m,[39m
- [90m 7 |[39m   [33mCategoryScale[39m[33m,[39m[0m
-
-https://nextjs.org/docs/messages/module-not-found
- [31m[1m⨯[22m[39m ./src/app/page.tsx:4:1
-[31m[1mModule not found[22m[39m: Can't resolve '[32mchart.js[39m'
-[0m [90m 2 |[39m
- [90m 3 |[39m [36mimport[39m { useEffect[33m,[39m useMemo[33m,[39m useState } [36mfrom[39m [32m'react'[39m[33m;[39m
-[31m[1m>[22m[39m[90m 4 |[39m [36mimport[39m {
- [90m   |[39m [31m[1m^[22m[39m
- [90m 5 |[39m   [33mChart[39m [36mas[39m [33mChartJS[39m[33m,[39m
- [90m 6 |[39m   [33mLineElement[39m[33m,[39m
- [90m 7 |[39m   [33mCategoryScale[39m[33m,[39m[0m
-
-https://nextjs.org/docs/messages/module-not-found
- GET / [31m500[39m in 9718ms
- [31m[1m⨯[22m[39m ./src/app/page.tsx:4:1
-[31m[1mModule not found[22m[39m: Can't resolve '[32mchart.js[39m'
-[0m [90m 2 |[39m
- [90m 3 |[39m [36mimport[39m { useEffect[33m,[39m useMemo[33m,[39m useState } [36mfrom[39m [32m'react'[39m[33m;[39m
-[31m[1m>[22m[39m[90m 4 |[39m [36mimport[39m {
- [90m   |[39m [31m[1m^[22m[39m
- [90m 5 |[39m   [33mChart[39m [36mas[39m [33mChartJS[39m[33m,[39m
- [90m 6 |[39m   [33mLineElement[39m[33m,[39m
- [90m 7 |[39m   [33mCategoryScale[39m[33m,[39m[0m
-
-https://nextjs.org/docs/messages/module-not-found
- [31m[1m⨯[22m[39m ./src/app/page.tsx:4:1
-[31m[1mModule not found[22m[39m: Can't resolve '[32mchart.js[39m'
-[0m [90m 2 |[39m
- [90m 3 |[39m [36mimport[39m { useEffect[33m,[39m useMemo[33m,[39m useState } [36mfrom[39m [32m'react'[39m[33m;[39m
-[31m[1m>[22m[39m[90m 4 |[39m [36mimport[39m {
- [90m   |[39m [31m[1m^[22m[39m
- [90m 5 |[39m   [33mChart[39m [36mas[39m [33mChartJS[39m[33m,[39m
- [90m 6 |[39m   [33mLineElement[39m[33m,[39m
- [90m 7 |[39m   [33mCategoryScale[39m[33m,[39m[0m
-
-https://nextjs.org/docs/messages/module-not-found
- [31m[1m⨯[22m[39m ./src/app/page.tsx:4:1
-[31m[1mModule not found[22m[39m: Can't resolve '[32mchart.js[39m'
-[0m [90m 2 |[39m
- [90m 3 |[39m [36mimport[39m { useEffect[33m,[39m useMemo[33m,[39m useState } [36mfrom[39m [32m'react'[39m[33m;[39m
-[31m[1m>[22m[39m[90m 4 |[39m [36mimport[39m {
- [90m   |[39m [31m[1m^[22m[39m
- [90m 5 |[39m   [33mChart[39m [36mas[39m [33mChartJS[39m[33m,[39m
- [90m 6 |[39m   [33mLineElement[39m[33m,[39m
- [90m 7 |[39m   [33mCategoryScale[39m[33m,[39m[0m
-
-https://nextjs.org/docs/messages/module-not-found
- [31m[1m⨯[22m[39m ./src/app/page.tsx:4:1
-[31m[1mModule not found[22m[39m: Can't resolve '[32mchart.js[39m'
-[0m [90m 2 |[39m
- [90m 3 |[39m [36mimport[39m { useEffect[33m,[39m useMemo[33m,[39m useState } [36mfrom[39m [32m'react'[39m[33m;[39m
-[31m[1m>[22m[39m[90m 4 |[39m [36mimport[39m {
- [90m   |[39m [31m[1m^[22m[39m
- [90m 5 |[39m   [33mChart[39m [36mas[39m [33mChartJS[39m[33m,[39m
- [90m 6 |[39m   [33mLineElement[39m[33m,[39m
- [90m 7 |[39m   [33mCategoryScale[39m[33m,[39m[0m
-
-https://nextjs.org/docs/messages/module-not-found
- [31m[1m⨯[22m[39m ./src/app/page.tsx:4:1
-[31m[1mModule not found[22m[39m: Can't resolve '[32mchart.js[39m'
-[0m [90m 2 |[39m
- [90m 3 |[39m [36mimport[39m { useEffect[33m,[39m useMemo[33m,[39m useState } [36mfrom[39m [32m'react'[39m[33m;[39m
-[31m[1m>[22m[39m[90m 4 |[39m [36mimport[39m {
- [90m   |[39m [31m[1m^[22m[39m
- [90m 5 |[39m   [33mChart[39m [36mas[39m [33mChartJS[39m[33m,[39m
- [90m 6 |[39m   [33mLineElement[39m[33m,[39m
- [90m 7 |[39m   [33mCategoryScale[39m[33m,[39m[0m
-
-https://nextjs.org/docs/messages/module-not-found
- [31m[1m⨯[22m[39m ./src/app/page.tsx:4:1
-[31m[1mModule not found[22m[39m: Can't resolve '[32mchart.js[39m'
-[0m [90m 2 |[39m
- [90m 3 |[39m [36mimport[39m { useEffect[33m,[39m useMemo[33m,[39m useState } [36mfrom[39m [32m'react'[39m[33m;[39m
-[31m[1m>[22m[39m[90m 4 |[39m [36mimport[39m {
- [90m   |[39m [31m[1m^[22m[39m
- [90m 5 |[39m   [33mChart[39m [36mas[39m [33mChartJS[39m[33m,[39m
- [90m 6 |[39m   [33mLineElement[39m[33m,[39m
- [90m 7 |[39m   [33mCategoryScale[39m[33m,[39m[0m
-
-https://nextjs.org/docs/messages/module-not-found
- [31m[1m⨯[22m[39m ./src/app/page.tsx:4:1
-[31m[1mModule not found[22m[39m: Can't resolve '[32mchart.js[39m'
-[0m [90m 2 |[39m
- [90m 3 |[39m [36mimport[39m { useEffect[33m,[39m useMemo[33m,[39m useState } [36mfrom[39m [32m'react'[39m[33m;[39m
-[31m[1m>[22m[39m[90m 4 |[39m [36mimport[39m {
- [90m   |[39m [31m[1m^[22m[39m
- [90m 5 |[39m   [33mChart[39m [36mas[39m [33mChartJS[39m[33m,[39m
- [90m 6 |[39m   [33mLineElement[39m[33m,[39m
- [90m 7 |[39m   [33mCategoryScale[39m[33m,[39m[0m
-
-https://nextjs.org/docs/messages/module-not-found
- [31m[1m⨯[22m[39m ./src/app/page.tsx:4:1
-[31m[1mModule not found[22m[39m: Can't resolve '[32mchart.js[39m'
-[0m [90m 2 |[39m
- [90m 3 |[39m [36mimport[39m { useEffect[33m,[39m useMemo[33m,[39m useState } [36mfrom[39m [32m'react'[39m[33m;[39m
-[31m[1m>[22m[39m[90m 4 |[39m [36mimport[39m {
- [90m   |[39m [31m[1m^[22m[39m
- [90m 5 |[39m   [33mChart[39m [36mas[39m [33mChartJS[39m[33m,[39m
- [90m 6 |[39m   [33mLineElement[39m[33m,[39m
- [90m 7 |[39m   [33mCategoryScale[39m[33m,[39m[0m
-
-https://nextjs.org/docs/messages/module-not-found
- [31m[1m⨯[22m[39m ./src/app/page.tsx:4:1
-[31m[1mModule not found[22m[39m: Can't resolve '[32mchart.js[39m'
-[0m [90m 2 |[39m
- [90m 3 |[39m [36mimport[39m { useEffect[33m,[39m useMemo[33m,[39m useState } [36mfrom[39m [32m'react'[39m[33m;[39m
-[31m[1m>[22m[39m[90m 4 |[39m [36mimport[39m {
- [90m   |[39m [31m[1m^[22m[39m
- [90m 5 |[39m   [33mChart[39m [36mas[39m [33mChartJS[39m[33m,[39m
- [90m 6 |[39m   [33mLineElement[39m[33m,[39m
- [90m 7 |[39m   [33mCategoryScale[39m[33m,[39m[0m
-
-https://nextjs.org/docs/messages/module-not-found
- [31m[1m⨯[22m[39m ./src/app/page.tsx:4:1
-[31m[1mModule not found[22m[39m: Can't resolve '[32mchart.js[39m'
-[0m [90m 2 |[39m
- [90m 3 |[39m [36mimport[39m { useEffect[33m,[39m useMemo[33m,[39m useState } [36mfrom[39m [32m'react'[39m[33m;[39m
-[31m[1m>[22m[39m[90m 4 |[39m [36mimport[39m {
- [90m   |[39m [31m[1m^[22m[39m
- [90m 5 |[39m   [33mChart[39m [36mas[39m [33mChartJS[39m[33m,[39m
- [90m 6 |[39m   [33mLineElement[39m[33m,[39m
- [90m 7 |[39m   [33mCategoryScale[39m[33m,[39m[0m
-
-https://nextjs.org/docs/messages/module-not-found
- [31m[1m⨯[22m[39m ./src/app/page.tsx:4:1
-[31m[1mModule not found[22m[39m: Can't resolve '[32mchart.js[39m'
-[0m [90m 2 |[39m
- [90m 3 |[39m [36mimport[39m { useEffect[33m,[39m useMemo[33m,[39m useState } [36mfrom[39m [32m'react'[39m[33m;[39m
-[31m[1m>[22m[39m[90m 4 |[39m [36mimport[39m {
- [90m   |[39m [31m[1m^[22m[39m
- [90m 5 |[39m   [33mChart[39m [36mas[39m [33mChartJS[39m[33m,[39m
- [90m 6 |[39m   [33mLineElement[39m[33m,[39m
- [90m 7 |[39m   [33mCategoryScale[39m[33m,[39m[0m
-
-https://nextjs.org/docs/messages/module-not-found
- [31m[1m⨯[22m[39m ./src/app/page.tsx:4:1
-[31m[1mModule not found[22m[39m: Can't resolve '[32mchart.js[39m'
-[0m [90m 2 |[39m
- [90m 3 |[39m [36mimport[39m { useEffect[33m,[39m useMemo[33m,[39m useState } [36mfrom[39m [32m'react'[39m[33m;[39m
-[31m[1m>[22m[39m[90m 4 |[39m [36mimport[39m {
- [90m   |[39m [31m[1m^[22m[39m
- [90m 5 |[39m   [33mChart[39m [36mas[39m [33mChartJS[39m[33m,[39m
- [90m 6 |[39m   [33mLineElement[39m[33m,[39m
- [90m 7 |[39m   [33mCategoryScale[39m[33m,[39m[0m
-
-https://nextjs.org/docs/messages/module-not-found
- [31m[1m⨯[22m[39m ./src/app/page.tsx:4:1
-[31m[1mModule not found[22m[39m: Can't resolve '[32mchart.js[39m'
-[0m [90m 2 |[39m
- [90m 3 |[39m [36mimport[39m { useEffect[33m,[39m useMemo[33m,[39m useState } [36mfrom[39m [32m'react'[39m[33m;[39m
-[31m[1m>[22m[39m[90m 4 |[39m [36mimport[39m {
- [90m   |[39m [31m[1m^[22m[39m
- [90m 5 |[39m   [33mChart[39m [36mas[39m [33mChartJS[39m[33m,[39m
- [90m 6 |[39m   [33mLineElement[39m[33m,[39m
- [90m 7 |[39m   [33mCategoryScale[39m[33m,[39m[0m
-
-https://nextjs.org/docs/messages/module-not-found
- [31m[1m⨯[22m[39m ./src/app/page.tsx:4:1
-[31m[1mModule not found[22m[39m: Can't resolve '[32mchart.js[39m'
-[0m [90m 2 |[39m
- [90m 3 |[39m [36mimport[39m { useEffect[33m,[39m useMemo[33m,[39m useState } [36mfrom[39m [32m'react'[39m[33m;[39m
-[31m[1m>[22m[39m[90m 4 |[39m [36mimport[39m {
- [90m   |[39m [31m[1m^[22m[39m
- [90m 5 |[39m   [33mChart[39m [36mas[39m [33mChartJS[39m[33m,[39m
- [90m 6 |[39m   [33mLineElement[39m[33m,[39m
- [90m 7 |[39m   [33mCategoryScale[39m[33m,[39m[0m
-
-https://nextjs.org/docs/messages/module-not-found
- [31m[1m⨯[22m[39m ./src/app/page.tsx:4:1
-[31m[1mModule not found[22m[39m: Can't resolve '[32mchart.js[39m'
-[0m [90m 2 |[39m
- [90m 3 |[39m [36mimport[39m { useEffect[33m,[39m useMemo[33m,[39m useState } [36mfrom[39m [32m'react'[39m[33m;[39m
-[31m[1m>[22m[39m[90m 4 |[39m [36mimport[39m {
- [90m   |[39m [31m[1m^[22m[39m
- [90m 5 |[39m   [33mChart[39m [36mas[39m [33mChartJS[39m[33m,[39m
- [90m 6 |[39m   [33mLineElement[39m[33m,[39m
- [90m 7 |[39m   [33mCategoryScale[39m[33m,[39m[0m
-
-https://nextjs.org/docs/messages/module-not-found
- [31m[1m⨯[22m[39m ./src/app/page.tsx:4:1
-[31m[1mModule not found[22m[39m: Can't resolve '[32mchart.js[39m'
-[0m [90m 2 |[39m
- [90m 3 |[39m [36mimport[39m { useEffect[33m,[39m useMemo[33m,[39m useState } [36mfrom[39m [32m'react'[39m[33m;[39m
-[31m[1m>[22m[39m[90m 4 |[39m [36mimport[39m {
- [90m   |[39m [31m[1m^[22m[39m
- [90m 5 |[39m   [33mChart[39m [36mas[39m [33mChartJS[39m[33m,[39m
- [90m 6 |[39m   [33mLineElement[39m[33m,[39m
- [90m 7 |[39m   [33mCategoryScale[39m[33m,[39m[0m
-
-https://nextjs.org/docs/messages/module-not-found
- [31m[1m⨯[22m[39m ./src/app/page.tsx:4:1
-[31m[1mModule not found[22m[39m: Can't resolve '[32mchart.js[39m'
-[0m [90m 2 |[39m
- [90m 3 |[39m [36mimport[39m { useEffect[33m,[39m useMemo[33m,[39m useState } [36mfrom[39m [32m'react'[39m[33m;[39m
-[31m[1m>[22m[39m[90m 4 |[39m [36mimport[39m {
- [90m   |[39m [31m[1m^[22m[39m
- [90m 5 |[39m   [33mChart[39m [36mas[39m [33mChartJS[39m[33m,[39m
- [90m 6 |[39m   [33mLineElement[39m[33m,[39m
- [90m 7 |[39m   [33mCategoryScale[39m[33m,[39m[0m
-
-https://nextjs.org/docs/messages/module-not-found
- [31m[1m⨯[22m[39m ./src/app/page.tsx:4:1
-[31m[1mModule not found[22m[39m: Can't resolve '[32mchart.js[39m'
-[0m [90m 2 |[39m
- [90m 3 |[39m [36mimport[39m { useEffect[33m,[39m useMemo[33m,[39m useState } [36mfrom[39m [32m'react'[39m[33m;[39m
-[31m[1m>[22m[39m[90m 4 |[39m [36mimport[39m {
- [90m   |[39m [31m[1m^[22m[39m
- [90m 5 |[39m   [33mChart[39m [36mas[39m [33mChartJS[39m[33m,[39m
- [90m 6 |[39m   [33mLineElement[39m[33m,[39m
- [90m 7 |[39m   [33mCategoryScale[39m[33m,[39m[0m
-
-https://nextjs.org/docs/messages/module-not-found
- [31m[1m⨯[22m[39m ./src/app/page.tsx:4:1
-[31m[1mModule not found[22m[39m: Can't resolve '[32mchart.js[39m'
-[0m [90m 2 |[39m
- [90m 3 |[39m [36mimport[39m { useEffect[33m,[39m useMemo[33m,[39m useState } [36mfrom[39m [32m'react'[39m[33m;[39m
-[31m[1m>[22m[39m[90m 4 |[39m [36mimport[39m {
- [90m   |[39m [31m[1m^[22m[39m
- [90m 5 |[39m   [33mChart[39m [36mas[39m [33mChartJS[39m[33m,[39m
- [90m 6 |[39m   [33mLineElement[39m[33m,[39m
- [90m 7 |[39m   [33mCategoryScale[39m[33m,[39m[0m
-
-https://nextjs.org/docs/messages/module-not-found
- [31m[1m⨯[22m[39m ./src/app/page.tsx:4:1
-[31m[1mModule not found[22m[39m: Can't resolve '[32mchart.js[39m'
-[0m [90m 2 |[39m
- [90m 3 |[39m [36mimport[39m { useEffect[33m,[39m useMemo[33m,[39m useState } [36mfrom[39m [32m'react'[39m[33m;[39m
-[31m[1m>[22m[39m[90m 4 |[39m [36mimport[39m {
- [90m   |[39m [31m[1m^[22m[39m
- [90m 5 |[39m   [33mChart[39m [36mas[39m [33mChartJS[39m[33m,[39m
- [90m 6 |[39m   [33mLineElement[39m[33m,[39m
- [90m 7 |[39m   [33mCategoryScale[39m[33m,[39m[0m
-
-https://nextjs.org/docs/messages/module-not-found
- [31m[1m⨯[22m[39m ./src/app/page.tsx:4:1
-[31m[1mModule not found[22m[39m: Can't resolve '[32mchart.js[39m'
-[0m [90m 2 |[39m
- [90m 3 |[39m [36mimport[39m { useEffect[33m,[39m useMemo[33m,[39m useState } [36mfrom[39m [32m'react'[39m[33m;[39m
-[31m[1m>[22m[39m[90m 4 |[39m [36mimport[39m {
- [90m   |[39m [31m[1m^[22m[39m
- [90m 5 |[39m   [33mChart[39m [36mas[39m [33mChartJS[39m[33m,[39m
- [90m 6 |[39m   [33mLineElement[39m[33m,[39m
- [90m 7 |[39m   [33mCategoryScale[39m[33m,[39m[0m
-
-https://nextjs.org/docs/messages/module-not-found
- [31m[1m⨯[22m[39m ./src/app/page.tsx:4:1
-[31m[1mModule not found[22m[39m: Can't resolve '[32mchart.js[39m'
-[0m [90m 2 |[39m
- [90m 3 |[39m [36mimport[39m { useEffect[33m,[39m useMemo[33m,[39m useState } [36mfrom[39m [32m'react'[39m[33m;[39m
-[31m[1m>[22m[39m[90m 4 |[39m [36mimport[39m {
- [90m   |[39m [31m[1m^[22m[39m
- [90m 5 |[39m   [33mChart[39m [36mas[39m [33mChartJS[39m[33m,[39m
- [90m 6 |[39m   [33mLineElement[39m[33m,[39m
- [90m 7 |[39m   [33mCategoryScale[39m[33m,[39m[0m
-
-https://nextjs.org/docs/messages/module-not-found
- [31m[1m⨯[22m[39m ./src/app/page.tsx:4:1
-[31m[1mModule not found[22m[39m: Can't resolve '[32mchart.js[39m'
-[0m [90m 2 |[39m
- [90m 3 |[39m [36mimport[39m { useEffect[33m,[39m useMemo[33m,[39m useState } [36mfrom[39m [32m'react'[39m[33m;[39m
-[31m[1m>[22m[39m[90m 4 |[39m [36mimport[39m {
- [90m   |[39m [31m[1m^[22m[39m
- [90m 5 |[39m   [33mChart[39m [36mas[39m [33mChartJS[39m[33m,[39m
- [90m 6 |[39m   [33mLineElement[39m[33m,[39m
- [90m 7 |[39m   [33mCategoryScale[39m[33m,[39m[0m
-
-https://nextjs.org/docs/messages/module-not-found
- [31m[1m⨯[22m[39m ./src/app/page.tsx:4:1
-[31m[1mModule not found[22m[39m: Can't resolve '[32mchart.js[39m'
-[0m [90m 2 |[39m
- [90m 3 |[39m [36mimport[39m { useEffect[33m,[39m useMemo[33m,[39m useState } [36mfrom[39m [32m'react'[39m[33m;[39m
-[31m[1m>[22m[39m[90m 4 |[39m [36mimport[39m {
- [90m   |[39m [31m[1m^[22m[39m
- [90m 5 |[39m   [33mChart[39m [36mas[39m [33mChartJS[39m[33m,[39m
- [90m 6 |[39m   [33mLineElement[39m[33m,[39m
- [90m 7 |[39m   [33mCategoryScale[39m[33m,[39m[0m
-
-https://nextjs.org/docs/messages/module-not-found
- GET / [31m500[39m in 1334ms
- [32m[1m✓[22m[39m Compiled /_not-found in 990ms (1178 modules)
- [33m[1m⚠[22m[39m Fast Refresh had to perform a full reload due to a runtime error.
-rooms []
- GET / [32m200[39m in 506ms
-(node:76264) [DEP0060] DeprecationWarning: The `util._extend` API is deprecated. Please use Object.assign() instead.
+ [32m[1m✓[22m[39m Ready in 1923ms
+ [37m[1m○[22m[39m Compiling /reservations ...
+ [32m[1m✓[22m[39m Compiled /reservations in 1914ms (817 modules)
+ GET /reservations [32m200[39m in 2448ms
+ GET /reservations [32m200[39m in 61ms
+(node:30894) [DEP0060] DeprecationWarning: The `util._extend` API is deprecated. Please use Object.assign() instead.
 (Use `node --trace-deprecation ...` to show where the warning was created)
+ GET /reservations [32m200[39m in 94ms
+ [32m[1m✓[22m[39m Compiled in 219ms (296 modules)
+ [32m[1m✓[22m[39m Compiled in 126ms (296 modules)
+ [32m[1m✓[22m[39m Compiled in 142ms (296 modules)
+ [32m[1m✓[22m[39m Compiled in 92ms (296 modules)
+ [32m[1m✓[22m[39m Compiled in 85ms (296 modules)
+ [32m[1m✓[22m[39m Compiled in 74ms (296 modules)
+ [32m[1m✓[22m[39m Compiled in 120ms (296 modules)
+ [32m[1m✓[22m[39m Compiled in 80ms (296 modules)
+ [32m[1m✓[22m[39m Compiled in 78ms (296 modules)
+ [32m[1m✓[22m[39m Compiled in 83ms (296 modules)
+ [32m[1m✓[22m[39m Compiled in 194ms (296 modules)
+ [32m[1m✓[22m[39m Compiled in 86ms (296 modules)
+ [32m[1m✓[22m[39m Compiled in 130ms (296 modules)
+ [32m[1m✓[22m[39m Compiled in 90ms (296 modules)
+ [32m[1m✓[22m[39m Compiled in 73ms (296 modules)
+ [32m[1m✓[22m[39m Compiled in 112ms (296 modules)
+ [32m[1m✓[22m[39m Compiled in 83ms (296 modules)
+ [32m[1m✓[22m[39m Compiled in 75ms (296 modules)
+ [32m[1m✓[22m[39m Compiled in 272ms (296 modules)
+ [32m[1m✓[22m[39m Compiled in 144ms (296 modules)
+ [32m[1m✓[22m[39m Compiled in 91ms (296 modules)
+ [32m[1m✓[22m[39m Compiled in 72ms (296 modules)
+ [31m[1m⨯[22m[39m ./src/app/reservations/page.tsx
+Error:   [31m×[0m Expected '}', got '<eof>'
+     ╭─[[36;1;4m/home/ldqtheone/skezi-technical-test/apps/web/src/app/reservations/page.tsx[0m:110:1]
+ [2m107[0m │ 
+ [2m108[0m │   function ReservationCard(r: Reservation) {
+ [2m109[0m │     
+ [2m110[0m │ }
+     · [35;1m ▲[0m
+     ╰────
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/app/reservations/page.tsx
+ [32m[1m✓[22m[39m Compiled in 140ms (296 modules)
+ [32m[1m✓[22m[39m Compiled in 68ms (296 modules)
+ [32m[1m✓[22m[39m Compiled in 95ms (296 modules)
+ [32m[1m✓[22m[39m Compiled in 97ms (296 modules)
+ [32m[1m✓[22m[39m Compiled in 80ms (296 modules)
+ [32m[1m✓[22m[39m Compiled in 123ms (296 modules)
+ [32m[1m✓[22m[39m Compiled in 79ms (296 modules)
+ [32m[1m✓[22m[39m Compiled in 74ms (296 modules)
+ [32m[1m✓[22m[39m Compiled in 69ms (296 modules)
+ [32m[1m✓[22m[39m Compiled in 104ms (296 modules)
+ [32m[1m✓[22m[39m Compiled in 138ms (296 modules)
+ [32m[1m✓[22m[39m Compiled in 117ms (296 modules)
+ [32m[1m✓[22m[39m Compiled in 68ms (296 modules)
+ [32m[1m✓[22m[39m Compiled in 115ms (296 modules)
+ [32m[1m✓[22m[39m Compiled in 73ms (296 modules)
+ [32m[1m✓[22m[39m Compiled in 69ms (296 modules)
+ [32m[1m✓[22m[39m Compiled in 70ms (296 modules)
+ [32m[1m✓[22m[39m Compiled in 119ms (296 modules)
+ [32m[1m✓[22m[39m Compiled in 74ms (296 modules)
+ [32m[1m✓[22m[39m Compiled in 70ms (296 modules)
+ [32m[1m✓[22m[39m Compiled in 70ms (296 modules)
+ [32m[1m✓[22m[39m Compiled in 123ms (296 modules)
+ [32m[1m✓[22m[39m Compiled in 70ms (296 modules)
+ [32m[1m✓[22m[39m Compiled in 64ms (296 modules)
+ [32m[1m✓[22m[39m Compiled in 71ms (296 modules)
+ [32m[1m✓[22m[39m Compiled in 71ms (296 modules)
+ [32m[1m✓[22m[39m Compiled in 113ms (296 modules)
+ [32m[1m✓[22m[39m Compiled in 71ms (296 modules)
+ [32m[1m✓[22m[39m Compiled in 69ms (296 modules)
+ [32m[1m✓[22m[39m Compiled in 105ms (296 modules)
+ [32m[1m✓[22m[39m Compiled in 65ms (296 modules)
+ [32m[1m✓[22m[39m Compiled in 64ms (296 modules)
+ [32m[1m✓[22m[39m Compiled in 65ms (296 modules)
+ [32m[1m✓[22m[39m Compiled in 123ms (296 modules)
+ [32m[1m✓[22m[39m Compiled in 73ms (296 modules)
+ [32m[1m✓[22m[39m Compiled in 71ms (296 modules)
+ [32m[1m✓[22m[39m Compiled in 116ms (296 modules)
+ [32m[1m✓[22m[39m Compiled in 82ms (296 modules)
+ [32m[1m✓[22m[39m Compiled in 81ms (296 modules)
+ [31m[1m⨯[22m[39m ./src/app/reservations/page.tsx
+Error:   [31m×[0m Expression expected
+     ╭─[[36;1;4m/home/ldqtheone/skezi-technical-test/apps/web/src/app/reservations/page.tsx[0m:100:1]
+ [2m 97[0m │       <Card title="Réservations de salles">
+ [2m 98[0m │         <div className="grid" style={{ gap: 12 }}>
+ [2m 99[0m │           {reservations.map((r) => (
+ [2m100[0m │             <
+     · [35;1m            ─[0m
+ [2m101[0m │           ))}
+ [2m102[0m │           {!reservations.length && <EmptyDiv>Aucune réservation</EmptyDiv>}
+ [2m103[0m │         </div>
+     ╰────
+  [31m×[0m Expected '</', got ')'
+     ╭─[[36;1;4m/home/ldqtheone/skezi-technical-test/apps/web/src/app/reservations/page.tsx[0m:101:1]
+ [2m 98[0m │         <div className="grid" style={{ gap: 12 }}>
+ [2m 99[0m │           {reservations.map((r) => (
+ [2m100[0m │             <
+ [2m101[0m │           ))}
+     · [35;1m          ─[0m
+ [2m102[0m │           {!reservations.length && <EmptyDiv>Aucune réservation</EmptyDiv>}
+ [2m103[0m │         </div>
+ [2m104[0m │       </Card>
+     ╰────
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/app/reservations/page.tsx
+ [31m[1m⨯[22m[39m ./src/app/reservations/page.tsx
+Error:   [31m×[0m Expected '</', got ')'
+     ╭─[[36;1;4m/home/ldqtheone/skezi-technical-test/apps/web/src/app/reservations/page.tsx[0m:101:1]
+ [2m 98[0m │         <div className="grid" style={{ gap: 12 }}>
+ [2m 99[0m │           {reservations.map((r) => (
+ [2m100[0m │             <ReservationsPage
+ [2m101[0m │           ))}
+     · [35;1m          ─[0m
+ [2m102[0m │           {!reservations.length && <EmptyDiv>Aucune réservation</EmptyDiv>}
+ [2m103[0m │         </div>
+ [2m104[0m │       </Card>
+     ╰────
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/app/reservations/page.tsx
+ [31m[1m⨯[22m[39m ./src/app/reservations/page.tsx
+Error:   [31m×[0m Expected '</', got ')'
+     ╭─[[36;1;4m/home/ldqtheone/skezi-technical-test/apps/web/src/app/reservations/page.tsx[0m:101:1]
+ [2m 98[0m │         <div className="grid" style={{ gap: 12 }}>
+ [2m 99[0m │           {reservations.map((r) => (
+ [2m100[0m │             <Res
+ [2m101[0m │           ))}
+     · [35;1m          ─[0m
+ [2m102[0m │           {!reservations.length && <EmptyDiv>Aucune réservation</EmptyDiv>}
+ [2m103[0m │         </div>
+ [2m104[0m │       </Card>
+     ╰────
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/app/reservations/page.tsx
+ [31m[1m⨯[22m[39m ./src/app/reservations/page.tsx
+Error:   [31m×[0m Expected '</', got ')'
+     ╭─[[36;1;4m/home/ldqtheone/skezi-technical-test/apps/web/src/app/reservations/page.tsx[0m:101:1]
+ [2m 98[0m │         <div className="grid" style={{ gap: 12 }}>
+ [2m 99[0m │           {reservations.map((r) => (
+ [2m100[0m │             <Reserva
+ [2m101[0m │           ))}
+     · [35;1m          ─[0m
+ [2m102[0m │           {!reservations.length && <EmptyDiv>Aucune réservation</EmptyDiv>}
+ [2m103[0m │         </div>
+ [2m104[0m │       </Card>
+     ╰────
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/app/reservations/page.tsx
+ [31m[1m⨯[22m[39m ./src/app/reservations/page.tsx
+Error:   [31m×[0m Expected '</', got ')'
+     ╭─[[36;1;4m/home/ldqtheone/skezi-technical-test/apps/web/src/app/reservations/page.tsx[0m:101:1]
+ [2m 98[0m │         <div className="grid" style={{ gap: 12 }}>
+ [2m 99[0m │           {reservations.map((r) => (
+ [2m100[0m │             <ReservationC
+ [2m101[0m │           ))}
+     · [35;1m          ─[0m
+ [2m102[0m │           {!reservations.length && <EmptyDiv>Aucune réservation</EmptyDiv>}
+ [2m103[0m │         </div>
+ [2m104[0m │       </Card>
+     ╰────
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/app/reservations/page.tsx
+ [32m[1m✓[22m[39m Compiled in 363ms (296 modules)
+ [32m[1m✓[22m[39m Compiled in 120ms (296 modules)
+ [32m[1m✓[22m[39m Compiled in 146ms (297 modules)
+ [32m[1m✓[22m[39m Compiled /reservations in 265ms (522 modules)
 rooms []
- GET / [32m200[39m in 51ms
- [32m[1m✓[22m[39m Compiled /rooms in 362ms (1171 modules)
- GET /rooms [32m200[39m in 487ms
- [32m[1m✓[22m[39m Compiled /reservations in 414ms (1178 modules)
- GET /reservations [32m200[39m in 488ms
- GET / [32m200[39m in 28ms
- GET /rooms [32m200[39m in 47ms
- GET /reservations [32m200[39m in 33ms
- GET /reservations [32m200[39m in 24ms
+ GET /reservations [32m200[39m in 642ms
+ [32m[1m✓[22m[39m Compiled /favicon.ico in 242ms (539 modules)
+ GET /favicon.ico [32m200[39m in 402ms
 rooms []
- GET /reservations [32m200[39m in 743ms
+ GET /reservations [32m200[39m in 248ms
+ GET /favicon.ico [32m200[39m in 12ms
+ [32m[1m✓[22m[39m Compiled in 266ms (836 modules)
+ GET /reservations [32m200[39m in 140ms
+ [31m[1m⨯[22m[39m ./src/components/ReservationCard.tsx
+Error:   [31m×[0m Expression expected
+    ╭─[[36;1;4m/home/ldqtheone/skezi-technical-test/apps/web/src/components/ReservationCard.tsx[0m:16:1]
+ [2m13[0m │             <div>À : {new Date(endsAt).toLocaleString()}</div>
+ [2m14[0m │ 
+ [2m15[0m │             <
+ [2m16[0m │         </div>
+    · [35;1m        ─[0m
+ [2m17[0m │ 
+ [2m18[0m │     );
+ [2m19[0m │ }
+    ╰────
+  [31m×[0m Unterminated regexp literal
+    ╭─[[36;1;4m/home/ldqtheone/skezi-technical-test/apps/web/src/components/ReservationCard.tsx[0m:16:1]
+ [2m13[0m │             <div>À : {new Date(endsAt).toLocaleString()}</div>
+ [2m14[0m │ 
+ [2m15[0m │             <
+ [2m16[0m │         </div>
+    · [35;1m         ─────[0m
+ [2m17[0m │ 
+ [2m18[0m │     );
+ [2m19[0m │ }
+    ╰────
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/components/ReservationCard.tsx
+./src/app/reservations/page.tsx
+ [33m[1m⚠[22m[39m Fast Refresh had to perform a full reload due to a runtime error.
+ [32m[1m✓[22m[39m Compiled in 223ms (836 modules)
+rooms []
+ GET /reservations [32m200[39m in 588ms
+ GET /favicon.ico [32m200[39m in 29ms
+ [33m[1m⚠[22m[39m Fast Refresh had to perform a full reload due to a runtime error.
+ [32m[1m✓[22m[39m Compiled in 215ms (836 modules)
+rooms []
+ GET /reservations [32m200[39m in 368ms
+ GET /favicon.ico [32m200[39m in 15ms
+ [33m[1m⚠[22m[39m Fast Refresh had to perform a full reload due to a runtime error.
+ [32m[1m✓[22m[39m Compiled in 279ms (836 modules)
+rooms []
+ GET /reservations [32m200[39m in 410ms
+ GET /favicon.ico [32m200[39m in 16ms
+ [31m[1m⨯[22m[39m ./src/components/ReservationCard.tsx
+Error:   [31m×[0m Expression expected
+    ╭─[[36;1;4m/home/ldqtheone/skezi-technical-test/apps/web/src/components/ReservationCard.tsx[0m:16:1]
+ [2m13[0m │             <div>À : {new Date(endsAt).toLocaleString()}</div>
+ [2m14[0m │ 
+ [2m15[0m │             <div style={{ marginTop: 12 }} className="row">
+ [2m16[0m │                 <button className="btn" onClick={delete}>
+    · [35;1m                                                       ─[0m
+ [2m17[0m │                     Supprimer
+ [2m18[0m │                 </button>
+ [2m19[0m │                 <span style={{ marginLeft: 12 }}>{message}</span>
+    ╰────
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/components/ReservationCard.tsx
+./src/app/reservations/page.tsx
+ [33m[1m⚠[22m[39m Fast Refresh had to perform a full reload due to a runtime error.
+ [32m[1m✓[22m[39m Compiled in 208ms (836 modules)
+rooms []
+ GET /reservations [32m200[39m in 389ms
+ GET /favicon.ico [32m200[39m in 68ms
+ [33m[1m⚠[22m[39m Fast Refresh had to perform a full reload due to a runtime error.
+ [32m[1m✓[22m[39m Compiled in 506ms (836 modules)
+rooms []
+ GET /reservations [32m200[39m in 638ms
+ GET /favicon.ico [32m200[39m in 21ms
+ [33m[1m⚠[22m[39m Fast Refresh had to perform a full reload due to a runtime error.
+ [32m[1m✓[22m[39m Compiled in 228ms (836 modules)
+rooms []
+ GET /reservations [32m200[39m in 360ms
+ GET /favicon.ico [32m200[39m in 19ms
+ [33m[1m⚠[22m[39m Fast Refresh had to perform a full reload due to a runtime error.
+ [32m[1m✓[22m[39m Compiled in 274ms (836 modules)
+rooms []
+ GET /reservations [32m200[39m in 446ms
+ GET /favicon.ico [32m200[39m in 14ms
+ [33m[1m⚠[22m[39m Fast Refresh had to perform a full reload due to a runtime error.
+ [32m[1m✓[22m[39m Compiled in 226ms (836 modules)
+rooms []
+ GET /reservations [32m200[39m in 346ms
+ GET /favicon.ico [32m200[39m in 17ms
+ [33m[1m⚠[22m[39m Fast Refresh had to perform a full reload due to a runtime error.
+ [32m[1m✓[22m[39m Compiled in 223ms (836 modules)
+rooms []
+ GET /reservations [32m200[39m in 399ms
+ GET /favicon.ico [32m200[39m in 18ms
+ [33m[1m⚠[22m[39m Fast Refresh had to perform a full reload due to a runtime error.
+ [32m[1m✓[22m[39m Compiled in 346ms (836 modules)
+rooms []
+ GET /reservations [32m200[39m in 524ms
+ GET /favicon.ico [32m200[39m in 19ms
+ [33m[1m⚠[22m[39m Fast Refresh had to perform a full reload due to a runtime error.
+ [32m[1m✓[22m[39m Compiled in 310ms (836 modules)
+rooms []
+ GET /reservations [32m200[39m in 411ms
+ GET /favicon.ico [32m200[39m in 29ms
+ [33m[1m⚠[22m[39m Fast Refresh had to perform a full reload due to a runtime error.
+ [32m[1m✓[22m[39m Compiled in 467ms (836 modules)
+rooms []
+ GET /reservations [32m200[39m in 500ms
+ GET /favicon.ico [32m200[39m in 20ms
+ [33m[1m⚠[22m[39m Fast Refresh had to perform a full reload due to a runtime error.
+ [32m[1m✓[22m[39m Compiled in 202ms (836 modules)
+rooms []
+ GET /reservations [32m200[39m in 345ms
+ GET /favicon.ico [32m200[39m in 14ms
+rooms []
+ GET /reservations [32m200[39m in 69ms
+ GET /favicon.ico [32m200[39m in 10ms
+ [37m[1m○[22m[39m Compiling /rooms ...
+ [32m[1m✓[22m[39m Compiled /rooms in 796ms (831 modules)
+ GET /rooms [32m200[39m in 899ms
+ GET /reservations [32m200[39m in 25ms
+ [31m[1m⨯[22m[39m ./src/components/ReservationCard.tsx
+Error:   [31m×[0m Expression expected
+    ╭─[[36;1;4m/home/ldqtheone/skezi-technical-test/apps/web/src/components/ReservationCard.tsx[0m:16:1]
+ [2m13[0m │             <div>À : {new Date(endsAt).toLocaleString()}</div>
+ [2m14[0m │ 
+ [2m15[0m │             <div style={{ marginTop: 12 }} className="row">
+ [2m16[0m │                 <button className="btn" onClick={}>
+    · [35;1m                                                  ─[0m
+ [2m17[0m │                     Supprimer
+ [2m18[0m │                 </button>
+ [2m19[0m │                 <span style={{ marginLeft: 12 }}>{message}</span>
+    ╰────
+  [31m×[0m Unterminated regexp literal
+    ╭─[[36;1;4m/home/ldqtheone/skezi-technical-test/apps/web/src/components/ReservationCard.tsx[0m:18:1]
+ [2m15[0m │             <div style={{ marginTop: 12 }} className="row">
+ [2m16[0m │                 <button className="btn" onClick={}>
+ [2m17[0m │                     Supprimer
+ [2m18[0m │                 </button>
+    · [35;1m                 ────────[0m
+ [2m19[0m │                 <span style={{ marginLeft: 12 }}>{message}</span>
+ [2m20[0m │             </div>
+ [2m21[0m │         </div>
+    ╰────
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/components/ReservationCard.tsx
+./src/app/reservations/page.tsx
+ [31m[1m⨯[22m[39m ./src/components/ReservationCard.tsx
+Error:   [31m×[0m Expected '</', got '}'
+    ╭─[[36;1;4m/home/ldqtheone/skezi-technical-test/apps/web/src/components/ReservationCard.tsx[0m:16:1]
+ [2m13[0m │             <div>À : {new Date(endsAt).toLocaleString()}</div>
+ [2m14[0m │ 
+ [2m15[0m │             <div style={{ marginTop: 12 }} className="row">
+ [2m16[0m │                 <button className="btn" onClick={()}>
+    · [35;1m                                                   ─[0m
+ [2m17[0m │                     Supprimer
+ [2m18[0m │                 </button>
+ [2m19[0m │                 <span style={{ marginLeft: 12 }}>{message}</span>
+    ╰────
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/components/ReservationCard.tsx
+./src/app/reservations/page.tsx
+ [32m[1m✓[22m[39m Compiled in 274ms (845 modules)
+ GET /reservations [32m200[39m in 70ms
+ [31m[1m⨯[22m[39m ./src/components/ReservationCard.tsx
+Error:   [31m×[0m Expression expected
+    ╭─[[36;1;4m/home/ldqtheone/skezi-technical-test/apps/web/src/components/ReservationCard.tsx[0m:16:1]
+ [2m13[0m │             <div>À : {new Date(endsAt).toLocaleString()}</div>
+ [2m14[0m │ 
+ [2m15[0m │             <div style={{ marginTop: 12 }} className="row">
+ [2m16[0m │                 <button className="btn" onClick={}>
+    · [35;1m                                                  ─[0m
+ [2m17[0m │                     Supprimer
+ [2m18[0m │                 </button>
+ [2m19[0m │                 <span style={{ marginLeft: 12 }}>{message}</span>
+    ╰────
+  [31m×[0m Unterminated regexp literal
+    ╭─[[36;1;4m/home/ldqtheone/skezi-technical-test/apps/web/src/components/ReservationCard.tsx[0m:18:1]
+ [2m15[0m │             <div style={{ marginTop: 12 }} className="row">
+ [2m16[0m │                 <button className="btn" onClick={}>
+ [2m17[0m │                     Supprimer
+ [2m18[0m │                 </button>
+    · [35;1m                 ────────[0m
+ [2m19[0m │                 <span style={{ marginLeft: 12 }}>{message}</span>
+ [2m20[0m │             </div>
+ [2m21[0m │         </div>
+    ╰────
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/components/ReservationCard.tsx
+./src/app/reservations/page.tsx
+ [32m[1m✓[22m[39m Compiled in 226ms (828 modules)
+ GET /reservations [32m200[39m in 192ms
+ [32m[1m✓[22m[39m Compiled in 281ms (822 modules)
+ GET /reservations [32m200[39m in 145ms
+ [32m[1m✓[22m[39m Compiled in 216ms (822 modules)
+ GET /reservations [32m200[39m in 61ms
+ [32m[1m✓[22m[39m Compiled in 217ms (822 modules)
+ GET /reservations [32m200[39m in 72ms
+ [31m[1m⨯[22m[39m ./src/components/ReservationCard.tsx
+Module parse failed: Unexpected keyword 'delete' (3:45)
+| import { jsxDEV as _jsxDEV } from "react/jsx-dev-runtime";
+| export default function ReservationCard(param, deleteReservation, message) {
+>     let { title, id, room, startsAt, endsAt, delete } = param;
+|     return /*#__PURE__*/ _jsxDEV("div", {
+|         className: "card",
+
+Import trace for requested module:
+./src/components/ReservationCard.tsx
+./src/app/reservations/page.tsx
+ [32m[1m✓[22m[39m Compiled in 207ms (822 modules)
+ GET /reservations [32m200[39m in 73ms
+ [31m[1m⨯[22m[39m ./src/components/ReservationCard.tsx
+Module parse failed: Identifier 'deleteReservation' has already been declared (3:45)
+| import { jsxDEV as _jsxDEV } from "react/jsx-dev-runtime";
+| export default function ReservationCard(param, deleteReservation, message) {
+>     let { title, id, room, startsAt, endsAt, deleteReservation } = param;
+|     return /*#__PURE__*/ _jsxDEV("div", {
+|         className: "card",
+
+Import trace for requested module:
+./src/components/ReservationCard.tsx
+./src/app/reservations/page.tsx
+ [31m[1m⨯[22m[39m ./src/components/ReservationCard.tsx
+Module parse failed: Identifier 'deleteReservation' has already been declared (3:45)
+| import { jsxDEV as _jsxDEV } from "react/jsx-dev-runtime";
+| export default function ReservationCard(param, deleteReservation, message) {
+>     let { title, id, room, startsAt, endsAt, deleteReservation } = param;
+|     return /*#__PURE__*/ _jsxDEV("div", {
+|         className: "card",
+
+Import trace for requested module:
+./src/components/ReservationCard.tsx
+./src/app/reservations/page.tsx
+ [33m[1m⚠[22m[39m Fast Refresh had to perform a full reload due to a runtime error.
+ [32m[1m✓[22m[39m Compiled in 272ms (822 modules)
+rooms []
+ GET /reservations [32m200[39m in 509ms
+ [32m[1m✓[22m[39m Compiled in 235ms (822 modules)
+ [32m[1m✓[22m[39m Compiled /favicon.ico in 386ms (539 modules)
+ GET /favicon.ico [32m200[39m in 521ms
+ [31m[1m⨯[22m[39m ./src/components/ReservationCard.tsx
+Error:   [31m×[0m Expression expected
+    ╭─[[36;1;4m/home/ldqtheone/skezi-technical-test/apps/web/src/components/ReservationCard.tsx[0m:20:1]
+ [2m17[0m │             <div>À : {new Date(endsAt).toLocaleString()}</div>
+ [2m18[0m │ 
+ [2m19[0m │             <div style={{ marginTop: 12 }} className="row">
+ [2m20[0m │                 <button className="btn" onClick={}>
+    · [35;1m                                                  ─[0m
+ [2m21[0m │                     Supprimer
+ [2m22[0m │                 </button>
+ [2m23[0m │                 <span style={{ marginLeft: 12 }}>{message}</span>
+    ╰────
+  [31m×[0m Unterminated regexp literal
+    ╭─[[36;1;4m/home/ldqtheone/skezi-technical-test/apps/web/src/components/ReservationCard.tsx[0m:22:1]
+ [2m19[0m │             <div style={{ marginTop: 12 }} className="row">
+ [2m20[0m │                 <button className="btn" onClick={}>
+ [2m21[0m │                     Supprimer
+ [2m22[0m │                 </button>
+    · [35;1m                 ────────[0m
+ [2m23[0m │                 <span style={{ marginLeft: 12 }}>{message}</span>
+ [2m24[0m │             </div>
+ [2m25[0m │         </div>
+    ╰────
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/components/ReservationCard.tsx
+./src/app/reservations/page.tsx
+ [33m[1m⚠[22m[39m Fast Refresh had to perform a full reload due to a runtime error.
+ [32m[1m✓[22m[39m Compiled in 192ms (839 modules)
+rooms []
+ GET /reservations [32m200[39m in 417ms
+ GET /favicon.ico [32m200[39m in 36ms
+ [33m[1m⚠[22m[39m Fast Refresh had to perform a full reload due to a runtime error.
+ [32m[1m✓[22m[39m Compiled in 218ms (839 modules)
+rooms []
+ GET /reservations [32m200[39m in 429ms
+ GET /favicon.ico [32m200[39m in 18ms
+ [32m[1m✓[22m[39m Compiled in 524ms (839 modules)
+ GET /reservations [32m200[39m in 74ms
+ [32m[1m✓[22m[39m Compiled in 291ms (839 modules)
+ GET /reservations [32m200[39m in 109ms
+ [31m[1m⨯[22m[39m ./src/app/reservations/page.tsx
+Module parse failed: Identifier 'deleteReservation' has already been declared (64:10)
+|         }
+|     };
+>     const deleteReservation = async (id)=>{
+|         setMessage('');
+|         try {
+
+Import trace for requested module:
+./src/app/reservations/page.tsx
+ [32m[1m✓[22m[39m Compiled in 328ms (839 modules)
+ GET /reservations [32m200[39m in 210ms
+ [31m[1m⨯[22m[39m ./src/app/reservations/page.tsx
+Error:   [31m×[0m Expected ident
+    ╭─[[36;1;4m/home/ldqtheone/skezi-technical-test/apps/web/src/app/reservations/page.tsx[0m:22:1]
+ [2m19[0m │   const [endsAt, setEndsAt] = useState('');
+ [2m20[0m │   const [message, setMessage] = useState('');
+ [2m21[0m │   const 
+ [2m22[0m │   const loadReservations = () => api.reservations.list().then(setReservations);
+    · [35;1m  ─────[0m
+ [2m23[0m │ 
+ [2m24[0m │   useEffect(() => {
+ [2m25[0m │     loadReservations().catch(console.error);
+    ╰────
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/app/reservations/page.tsx
+ [37m[1m○[22m[39m Compiling /_error ...
+ [31m[1m⨯[22m[39m ./src/app/reservations/page.tsx
+Error:   [31m×[0m Expected ident
+    ╭─[[36;1;4m/home/ldqtheone/skezi-technical-test/apps/web/src/app/reservations/page.tsx[0m:22:1]
+ [2m19[0m │   const [endsAt, setEndsAt] = useState('');
+ [2m20[0m │   const [message, setMessage] = useState('');
+ [2m21[0m │   const 
+ [2m22[0m │   const loadReservations = () => api.reservations.list().then(setReservations);
+    · [35;1m  ─────[0m
+ [2m23[0m │ 
+ [2m24[0m │   useEffect(() => {
+ [2m25[0m │     loadReservations().catch(console.error);
+    ╰────
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/app/reservations/page.tsx
+ GET /reservations [31m500[39m in 1478ms
+ GET /reservations [31m500[39m in 16ms
+ GET /reservations [31m500[39m in 14ms
+ GET /reservations [31m500[39m in 15ms
+ [33m[1m⚠[22m[39m Fast Refresh had to perform a full reload due to a runtime error.
+ [33m[1m⚠[22m[39m Fast Refresh had to perform a full reload due to a runtime error.
+ GET /reservations [31m500[39m in 231ms
+ [32m[1m✓[22m[39m Compiled /_error in 1000ms (1171 modules)
+ GET /reservations [32m200[39m in 763ms
+rooms []
+ [33m[1m⚠[22m[39m Fast Refresh had to perform a full reload due to a runtime error.
+ GET /reservations [32m200[39m in 415ms
+rooms []
+rooms []
+ [33m[1m⚠[22m[39m Fast Refresh had to perform a full reload due to a runtime error.
+ GET /reservations [32m200[39m in 175ms
+ GET /favicon.ico [32m200[39m in 26ms
+ [32m[1m✓[22m[39m Compiled in 348ms (1185 modules)
+ GET /reservations [32m200[39m in 143ms
+ [32m[1m✓[22m[39m Compiled in 293ms (1185 modules)
+ GET /reservations [32m200[39m in 80ms
+ [32m[1m✓[22m[39m Compiled in 290ms (1185 modules)
+ GET /reservations [32m200[39m in 78ms
+ [32m[1m✓[22m[39m Compiled in 278ms (1185 modules)
+ GET /reservations [32m200[39m in 80ms
+ [32m[1m✓[22m[39m Compiled in 274ms (1185 modules)
+ GET /reservations [32m200[39m in 66ms
+ [32m[1m✓[22m[39m Compiled in 336ms (1185 modules)
+ GET /reservations [32m200[39m in 78ms
+ [32m[1m✓[22m[39m Compiled in 260ms (1185 modules)
+ GET /reservations [32m200[39m in 69ms
+ [32m[1m✓[22m[39m Compiled in 273ms (1185 modules)
+ GET /reservations [32m200[39m in 67ms
+ [32m[1m✓[22m[39m Compiled in 252ms (1185 modules)
+ GET /reservations [32m200[39m in 76ms
+rooms []
+ GET /reservations [32m200[39m in 179ms
+ GET /favicon.ico [32m200[39m in 20ms
+ [32m[1m✓[22m[39m Compiled in 493ms (1185 modules)
+ GET /reservations [32m200[39m in 85ms
+ [33m[1m⚠[22m[39m Fast Refresh had to perform a full reload due to a runtime error.
+ [32m[1m✓[22m[39m Compiled in 574ms (1185 modules)
+rooms []
+ GET /reservations [32m200[39m in 644ms
+ [32m[1m✓[22m[39m Compiled in 315ms (1185 modules)
+ GET /favicon.ico [32m200[39m in 41ms
+rooms []
+ GET /reservations [32m200[39m in 157ms
+ GET /favicon.ico [32m200[39m in 9ms
+ [32m[1m✓[22m[39m Compiled in 106ms (458 modules)
+ GET /reservations [32m200[39m in 45ms
+ [32m[1m✓[22m[39m Compiled in 87ms (458 modules)
+ GET /reservations [32m200[39m in 52ms
+ [32m[1m✓[22m[39m Compiled in 82ms (458 modules)
+ GET /reservations [32m200[39m in 42ms
+ [32m[1m✓[22m[39m Compiled in 213ms (458 modules)
+ GET /reservations [32m200[39m in 92ms
+ [32m[1m✓[22m[39m Compiled in 114ms (458 modules)
+ GET /reservations [32m200[39m in 53ms
+ [32m[1m✓[22m[39m Compiled in 86ms (458 modules)
+ GET /reservations [32m200[39m in 43ms
+ [32m[1m✓[22m[39m Compiled in 83ms (458 modules)
+ GET /reservations [32m200[39m in 49ms
+ [32m[1m✓[22m[39m Compiled in 86ms (458 modules)
+ GET /reservations [32m200[39m in 36ms
+ [32m[1m✓[22m[39m Compiled in 86ms (458 modules)
+ GET /reservations [32m200[39m in 39ms
+ [32m[1m✓[22m[39m Compiled in 97ms (458 modules)
+ GET /reservations [32m200[39m in 54ms
+rooms []
+ GET /reservations [32m200[39m in 50ms
+ GET /favicon.ico [32m200[39m in 14ms
+ [37m[1m○[22m[39m Compiling / ...
+ [32m[1m✓[22m[39m Compiled / in 916ms (1187 modules)
+ GET / [32m200[39m in 1038ms
+ [32m[1m✓[22m[39m Compiled in 112ms (464 modules)
+ GET / [32m200[39m in 52ms
+ [32m[1m✓[22m[39m Compiled in 495ms (1201 modules)
+ GET / [32m200[39m in 142ms

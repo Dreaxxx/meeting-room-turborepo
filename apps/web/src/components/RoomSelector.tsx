@@ -19,6 +19,7 @@ export default function RoomSelector({ value, onChange, includeAll, label = 'Sal
   return (
     <Field label={label}>
       <select
+        data-testid="room"
         className="input"
         value={value}
         onChange={(e) => onChange(e.target.value)}

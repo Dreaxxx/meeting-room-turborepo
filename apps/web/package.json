@@ -10,7 +10,9 @@
     "lint:fix": "eslint . --ext .ts,.tsx --fix",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
-    "test": "jest --selectProjects unit"
+    "test": "vitest --passWithNoTests",
+    "test:ui": "vitest --ui",
+    "test:cov": "vitest run --coverage"
   },
   "dependencies": {
     "@tanstack/react-query": "^5.90.1",
@@ -28,18 +30,28 @@
     "@eslint/eslintrc": "^3",
     "@next/eslint-plugin-next": "^15.0.0",
     "@tailwindcss/postcss": "^4",
+    "@testing-library/jest-dom": "^6.8.0",
+    "@testing-library/react": "^16.3.0",
+    "@testing-library/user-event": "^14.6.1",
     "@types/chart.js": "^2.9.41",
+    "@types/jsdom": "^21.1.7",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "@typescript-eslint/eslint-plugin": "^8.44.1",
     "@typescript-eslint/parser": "^8.44.1",
+    "@vitejs/plugin-react": "^5.0.3",
+    "@vitest/coverage-v8": "^3.2.4",
     "eslint": "^8.57.1",
     "eslint-config-next": "^15.0.0",
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-prettier": "^5.5.4",
+    "jsdom": "^27.0.0",
+    "msw": "^2.11.3",
     "prettier": "^3.6.2",
     "tailwindcss": "^4",
-    "typescript": "^5"
+    "typescript": "^5",
+    "vite": "^7.1.7",
+    "vitest": "^3.2.4"
   }
 }
