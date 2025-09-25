@@ -1,36 +1,38 @@
 import { http, HttpResponse } from 'msw';
 
-// helpers de réponse
 const json = (data: any, init?: number | ResponseInit) =>
-    HttpResponse.json(data, typeof init === 'number' ? { status: init } : init);
+  HttpResponse.json(data, typeof init === 'number' ? { status: init } : init);
 
-// Mettez des wildcards '*/path' pour matcher quel que soit le host/baseURL
 export const handlers = [
-    // Rooms list
-    http.get('*/rooms', () =>
-        json([{ id: 'A', name: 'Orion', capacity: 4 }, { id: 'B', name: 'Vega', capacity: 8 }])
-    ),
+  http.get('/api/rooms', () =>
+    json([
+      { id: 'A', name: 'Orion', capacity: 4 },
+      { id: 'B', name: 'Vega', capacity: 8 },
+    ]),
+  ),
 
-    // Top rooms
-    http.get('*/stats/top-rooms', ({ request }) => {
-        const url = new URL(request.url);
-        const limit = Number(url.searchParams.get('limit') ?? '3');
-        const data = [
-            { roomId: 'A', count: 5, room: { id: 'A', name: 'Orion', capacity: 4 } },
-            { roomId: 'B', count: 3, room: { id: 'B', name: 'Vega', capacity: 8 } },
-            { roomId: 'C', count: 2, room: { id: 'C', name: 'Rigel', capacity: 6 } },
-        ].slice(0, limit);
-        return json(data);
-    }),
+  http.post('/api/rooms', async ({ request }) => {
+    const body = (await request.json()) as Record<string, unknown>;
+    return json({ id: 'new-id', ...body }, 201);
+  }),
 
-    // Avg meeting duration
-    http.get('*/stats/avg-meeting-duration', () =>
-        json({ avgMinutes: 42 })
-    ),
+  http.get('/api/stats/top-rooms', ({ request }) => {
+    const url = new URL(request.url);
+    const limit = Number(url.searchParams.get('limit') ?? '3');
+    const data = [
+      { roomId: 'A', count: 5, room: { id: 'A', name: 'Orion', capacity: 4 } },
+      { roomId: 'B', count: 3, room: { id: 'B', name: 'Vega', capacity: 8 } },
+      { roomId: 'C', count: 2, room: { id: 'C', name: 'Rigel', capacity: 6 } },
+    ].slice(0, limit);
+    return json(data);
+  }),
 
-    // Create reservation
-    http.post('*/reservations', async ({ request }) => {
-        const body = (await request.json()) as Record<string, unknown>;
-        return json({ id: 'new-id', ...body }, 201);
-    }),
+  http.get('/api/stats/avg-meeting-duration', () => json({ avgMinutes: 42 })),
+
+  http.post('/api/reservations', async ({ request }) => {
+    const body = (await request.json()) as Record<string, unknown>;
+    return json({ id: 'new-id', ...body }, 201);
+  }),
+
+  http.delete('/api/reservations/:id', () => json(null, 204)),
 ];

@@ -8,6 +8,7 @@ import { api } from '../lib/api';
 import { Room, Reservation, CreateReservationDto } from '../lib/types';
 import RoomSelector from '@/components/RoomSelector';
 import EmptyDiv from '@/components/EmptyDiv';
+import ReservationCard from '@/components/ReservationCard';
 
 export default function ReservationsPage() {
   const [, setRooms] = useState<Room[]>([]);
@@ -17,6 +18,7 @@ export default function ReservationsPage() {
   const [startsAt, setStartsAt] = useState('');
   const [endsAt, setEndsAt] = useState('');
   const [message, setMessage] = useState('');
+  const [deleteMessage, setDeleteMessage] = useState('');
 
   const loadReservations = () => api.reservations.list().then(setReservations);
 
@@ -48,7 +50,7 @@ export default function ReservationsPage() {
       await loadReservations();
     } catch (e: unknown) {
       if (e instanceof AxiosError && e.response) {
-        setMessage(`Error : ❌ ${e.response.data.message || e.message}`);
+        setMessage(`Error : ${e.response.data.message || e.message}`);
         return;
       }
       if (e instanceof Error) {
@@ -59,17 +61,41 @@ export default function ReservationsPage() {
     }
   };
 
+  const deleteReservation = async (id: string) => {
+    setDeleteMessage('');
+    try {
+      await api.reservations.delete(id);
+      setDeleteMessage('✅ Réservation supprimée');
+      await loadReservations();
+    } catch (e: unknown) {
+      if (e instanceof AxiosError && e.response) {
+        setDeleteMessage(`Error : ${e.response.data.message || e.message}`);
+        return;
+      }
+      if (e instanceof Error) {
+        setDeleteMessage(`Error : ❌ ${e.message}`);
+        return;
+      }
+      setDeleteMessage('Error : ❌ Erreur inconnue');
+    }
+  };
+
   return (
     <div className="grid" style={{ gap: 24 }}>
       <Card title="Créer une réservation">
         <div className="grid grid-2" style={{ gap: 16 }}>
           <RoomSelector value={roomId} onChange={setRoomId} label="Salle" />
-          <Field label="Titre de la salle">
-            <input data-testid='title' className="input" value={title} onChange={(e) => setTitle(e.target.value)} />
+          <Field label="Titre de la réservation">
+            <input
+              data-testid="title"
+              className="input"
+              value={title}
+              onChange={(e) => setTitle(e.target.value)}
+            />
           </Field>
           <Field label="Débute à">
             <input
-              data-testid='start'
+              data-testid="start"
               className="input"
               type="datetime-local"
               value={startsAt}
@@ -78,7 +104,7 @@ export default function ReservationsPage() {
           </Field>
           <Field label="Termine à">
             <input
-              data-testid='end'
+              data-testid="end"
               className="input"
               type="datetime-local"
               value={endsAt}
@@ -97,17 +123,9 @@ export default function ReservationsPage() {
       <Card title="Réservations de salles">
         <div className="grid" style={{ gap: 12 }}>
           {reservations.map((r) => (
-            <div
-              key={r.id}
-              className="card"
-              style={{ padding: 14, borderRadius: 12, border: '1px solid #eee' }}
-            >
-              <div style={{ fontWeight: 700 }}>{r.title}</div>
-              <div style={{ opacity: 0.75 }}>Salle : {r.room?.name}</div>
-              <div>De : {new Date(r.startsAt).toLocaleString()}</div>
-              <div>À : {new Date(r.endsAt).toLocaleString()}</div>
-            </div>
+            <ReservationCard key={r.id} {...r} deleteReservation={deleteReservation} />
           ))}
+          {deleteMessage && <span style={{ marginLeft: 12 }}>{deleteMessage}</span>}
           {!reservations.length && <EmptyDiv>Aucune réservation</EmptyDiv>}
         </div>
       </Card>
