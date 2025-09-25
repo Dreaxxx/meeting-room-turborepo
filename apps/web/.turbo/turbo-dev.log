@@ -17,98 +17,13 @@
      · serverActions
 
  [32m[1m✓[22m[39m Starting...
- [32m[1m✓[22m[39m Ready in 2.6s
+ [32m[1m✓[22m[39m Ready in 1852ms
  [37m[1m○[22m[39m Compiling /rooms ...
- [32m[1m✓[22m[39m Compiled /rooms in 1664ms (801 modules)
- GET /rooms [32m200[39m in 2479ms
-(node:11463) [DEP0060] DeprecationWarning: The `util._extend` API is deprecated. Please use Object.assign() instead.
+ [32m[1m✓[22m[39m Compiled /rooms in 1792ms (815 modules)
+ GET /rooms [32m200[39m in 2531ms
+(node:16820) [DEP0060] DeprecationWarning: The `util._extend` API is deprecated. Please use Object.assign() instead.
 (Use `node --trace-deprecation ...` to show where the warning was created)
- [32m[1m✓[22m[39m Compiled /favicon.ico in 244ms (537 modules)
- GET /favicon.ico [32m200[39m in 390ms
- [33m[1m⚠[22m[39m Found a change in next.config.ts. Restarting the server to apply the changes...
-   [1m[38;2;173;127;168m▲ Next.js 15.5.4[39m[22m
-   - Local:        http://localhost:3000
-   - Network:      http://172.21.43.227:3000
-   - Environments: .env.local, .env
-   - Experiments (use with caution):
-     · serverActions
-
- [32m[1m✓[22m[39m Starting...
- [32m[1m✓[22m[39m Ready in 1640ms
- [33m[1m⚠[22m[39m Found a change in next.config.ts. Restarting the server to apply the changes...
-   [1m[38;2;173;127;168m▲ Next.js 15.5.4[39m[22m
-   - Local:        http://localhost:3000
-   - Network:      http://172.21.43.227:3000
-   - Environments: .env.local, .env
-   - Experiments (use with caution):
-     · serverActions
-
- [32m[1m✓[22m[39m Starting...
- [32m[1m✓[22m[39m Ready in 1680ms
- [33m[1m⚠[22m[39m Found a change in next.config.ts. Restarting the server to apply the changes...
-   [1m[38;2;173;127;168m▲ Next.js 15.5.4[39m[22m
-   - Local:        http://localhost:3000
-   - Network:      http://172.21.43.227:3000
-   - Environments: .env.local, .env
-   - Experiments (use with caution):
-     · serverActions
-
- [32m[1m✓[22m[39m Starting...
- [32m[1m✓[22m[39m Ready in 1655ms
- [33m[1m⚠[22m[39m Found a change in next.config.ts. Restarting the server to apply the changes...
-   [1m[38;2;173;127;168m▲ Next.js 15.5.4[39m[22m
-   - Local:        http://localhost:3000
-   - Network:      http://172.21.43.227:3000
-   - Environments: .env.local, .env
-   - Experiments (use with caution):
-     · serverActions
-
- [32m[1m✓[22m[39m Starting...
- [32m[1m✓[22m[39m Ready in 1606ms
- [33m[1m⚠[22m[39m Found a change in next.config.ts. Restarting the server to apply the changes...
-   [1m[38;2;173;127;168m▲ Next.js 15.5.4[39m[22m
-   - Local:        http://localhost:3000
-   - Network:      http://172.21.43.227:3000
-   - Environments: .env.local, .env
-   - Experiments (use with caution):
-     · serverActions
-
- [32m[1m✓[22m[39m Starting...
- [32m[1m✓[22m[39m Ready in 1592ms
- [33m[1m⚠[22m[39m Found a change in next.config.ts. Restarting the server to apply the changes...
-   [1m[38;2;173;127;168m▲ Next.js 15.5.4[39m[22m
-   - Local:        http://localhost:3000
-   - Network:      http://172.21.43.227:3000
-   - Environments: .env.local, .env
-   - Experiments (use with caution):
-     · serverActions
-
- [32m[1m✓[22m[39m Starting...
- [32m[1m✓[22m[39m Ready in 1584ms
- [33m[1m⚠[22m[39m Found a change in next.config.ts. Restarting the server to apply the changes...
-   [1m[38;2;173;127;168m▲ Next.js 15.5.4[39m[22m
-   - Local:        http://localhost:3000
-   - Network:      http://172.21.43.227:3000
-   - Environments: .env.local, .env
-   - Experiments (use with caution):
-     · serverActions
-
- [32m[1m✓[22m[39m Starting...
- [32m[1m✓[22m[39m Ready in 1622ms
- [33m[1m⚠[22m[39m Found a change in next.config.ts. Restarting the server to apply the changes...
-/home/ldqtheone/skezi-technical-test/apps/web/next.config.compiled.js:157
-target;
-^
-
-ReferenceError: target is not defined
-    at Object.<anonymous> [90m(/home/ldqtheone/skezi-technical-test/apps/web/[39mnext.config.compiled.js:157:1[90m)[39m
-[90m    at Module._compile (node:internal/modules/cjs/loader:1554:14)[39m
-    at requireFromString (/home/ldqtheone/skezi-technical-test/node_modules/[4mnext[24m/dist/build/next-config-ts/require-hook.js:81:7)
-    at transpileConfig (/home/ldqtheone/skezi-technical-test/node_modules/[4mnext[24m/dist/build/next-config-ts/transpile-config.js:98:51)
-    at async loadConfig (/home/ldqtheone/skezi-technical-test/node_modules/[4mnext[24m/dist/server/config.js:1060:36)
-    at async getStartServerInfo (/home/ldqtheone/skezi-technical-test/node_modules/[4mnext[24m/dist/server/lib/app-info-log.js:109:5)
-    at async Server.<anonymous> (/home/ldqtheone/skezi-technical-test/node_modules/[4mnext[24m/dist/server/lib/start-server.js:312:41)
-
-Node.js v22.14.0
-[?25h
-[1G[0K⠙[1G[0K
+ [32m[1m✓[22m[39m Compiled /favicon.ico in 278ms (537 modules)
+ GET /favicon.ico [32m200[39m in 432ms
+ [32m[1m✓[22m[39m Compiled in 551ms (815 modules)
+ GET /rooms [32m200[39m in 216ms
