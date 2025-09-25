@@ -20,12 +20,12 @@ API (Nest + Prisma)
 
 Fichier apps/api/.env :
 
-# Exemple : adapte l’URL à la stack (port/identifiants/Bdd)
+# Exemple : adapter l’URL à la stack (port/identifiants/Bdd) (probleme de conf avec WSL sur les ports, j'ai du changer par 55432...)
 DATABASE_URL=postgresql://postgres:postgres@localhost:55432/meetingdb?schema=public
 PORT=3001
 
-⚠️ Mets une vraie URL Postgres valide (login/mdp/port corrects).
-Si tu utilises Docker, assure-toi que le conteneur expose le bon port en local.
+⚠️ Il faut une URL Postgres valide (login/mdp/port corrects).
+S'assurer que le conteneur expose le bon port en local avec Docker.
 
 Front (Next)
 
@@ -70,7 +70,7 @@ npm run dev
 
 Uniquement l’API
 npm run dev -- --filter=./apps/api
-# API: http://localhost:3001 (selon ton .env)
+# API: http://localhost:3001
 
 Uniquement le Front
 npm run dev -- --filter=./apps/web
@@ -87,7 +87,7 @@ DATABASE_URL="file:./test.db"
 Dépannage rapide
 
 Prisma : P1000 / auth failed
-Vérifie DATABASE_URL et que Postgres accepte bien la connexion (user/mdp/port).
+Vérifier DATABASE_URL et que Postgres accepte bien la connexion (user/mdp/port).
 Relancer une migration/génération si besoin :
 
 cd apps/api
