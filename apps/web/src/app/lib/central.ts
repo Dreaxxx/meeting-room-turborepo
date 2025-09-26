@@ -1,4 +1,5 @@
-import axios from 'axios';
+import axios, { AxiosError } from 'axios';
+import { CustomCfgConfig, ErrorResponseData } from './types';
 
 const API_BASE =
   process.env.NEXT_PUBLIC_API_URL && process.env.NEXT_PUBLIC_API_URL.trim().length > 0
@@ -7,7 +8,7 @@ const API_BASE =
 
 export const http = axios.create({
   baseURL: API_BASE,
-  timeout: 10000,
+  timeout: 65000,
   headers: { 'Content-Type': 'application/json' },
 });
 
@@ -23,6 +24,14 @@ export function setAuthToken(token?: string) {
       localStorage.removeItem('token');
     }
   }
+}
+
+function isColdStartError(err: AxiosError) {
+  const status = err.response?.status;
+  const networkish = !err.response;
+  const gateway = status === 502 || status === 503 || status === 504;
+  const aborted = (err.code === 'ECONNABORTED');
+  return networkish || gateway || aborted;
 }
 
 export function bootstrapAuth() {
@@ -46,17 +55,43 @@ http.interceptors.request.use((config) => {
 
 http.interceptors.response.use(
   (res) => res,
-  (error) => {
+  async (error: AxiosError & CustomCfgConfig) => {
+    const cfg = error.config;
     const status = error?.response?.status;
-    const text =
-      error?.response?.data?.message ||
-      error?.response?.data?.error ||
-      error?.message ||
-      'Unknown error';
+
     if (status === 401) {
       setAuthToken(undefined);
     }
 
-    return Promise.reject(new Error(`API ${status ?? ''} ${text}`.trim()));
+    cfg.retryCount = cfg.retryCount ?? 0;
+
+    const maxRetries = 2;
+    const maxElapsedTime = 70000;
+
+    const startedAt = cfg.startedAt ?? Date.now() as number;
+
+    if (isColdStartError(error)) {
+      const elapsed = Date.now() - startedAt;
+      if (elapsed < maxElapsedTime) {
+        cfg.retryCount += 1;
+        cfg.startedAt = startedAt;
+
+        if (cfg.retryCount < maxRetries) {
+          cfg.startedAt = Date.now();
+          await new Promise((resolve) => setTimeout(resolve, 1000));
+          return http.request(cfg);
+        }
+      }
+    }
+
+    const data = error.response?.data as ErrorResponseData;
+
+    const formatedError: string = data.message ||
+      (data)?.error ||
+      error.message ||
+      'Unknown error';
+
+    return Promise.reject(new Error(`API ${status ?? ''} ${formatedError}`.trim()));
+
   },
 );

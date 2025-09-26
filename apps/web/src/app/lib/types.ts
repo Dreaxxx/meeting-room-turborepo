@@ -16,3 +16,6 @@ export type CreateReservationDto = {
   startsAt: string;
   endsAt: string;
 };
+
+export type CustomCfgConfig = { config: { retryCount?: number, startedAt?: number } }
+export type ErrorResponseData = { message?: string; error?: string }
