@@ -7,7 +7,7 @@ import { UpdateReservationDto } from './dto/update-reservation.dto';
 export class ReservationsService {
   constructor(private prisma: PrismaService) { }
 
-  async create(dto: CreateReservationDto) {
+  async create(dto: CreateReservationDto, userId: string) {
     const now = new Date();
     const starts = new Date(dto.startsAt);
     const ends = new Date(dto.endsAt);
@@ -27,7 +27,7 @@ export class ReservationsService {
             title: dto.title,
             startsAt: starts,
             endsAt: ends,
-            userId: dto.userId,
+            userId,
           },
         });
       });

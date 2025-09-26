@@ -1,5 +1,5 @@
 import { Test } from '@nestjs/testing';
-import { BadRequestException } from '@nestjs/common';
+import { BadRequestException, InternalServerErrorException } from '@nestjs/common';
 import { PrismaService } from '../prisma/prisma.service';
 import { ReservationsService } from './reservations.service';
 
@@ -13,7 +13,8 @@ describe('ReservationsService (unit)', () => {
       update: jest.Mock;
       create: jest.Mock;
       delete: jest.Mock;
-    };
+    },
+    $transaction: jest.Mock;
   };
 
   beforeEach(async () => {
@@ -26,6 +27,7 @@ describe('ReservationsService (unit)', () => {
         update: jest.fn(),
         delete: jest.fn(),
       },
+      $transaction: jest.fn(),
     };
 
     const moduleRef = await Test.createTestingModule({
@@ -43,7 +45,6 @@ describe('ReservationsService (unit)', () => {
     title: 'Reunion de test',
     startsAt: new Date('2025-11-22T09:00:00Z').toISOString(),
     endsAt: new Date('2025-11-22T10:00:00Z').toISOString(),
-    userId: 'user-1',
   };
 
   it('should findAll reservations', async () => {
@@ -87,7 +88,7 @@ describe('ReservationsService (unit)', () => {
       service.create({
         ...baseDto,
         startsAt: new Date('2020-09-22T09:00:00Z').toISOString(),
-      }),
+      }, '1234'),
     ).rejects.toBeInstanceOf(BadRequestException);
 
     console.log(
@@ -102,14 +103,14 @@ describe('ReservationsService (unit)', () => {
       service.create({
         ...baseDto,
         endsAt: new Date('2025-09-22T08:00:00Z').toISOString(),
-      }),
+      }, '1234'),
     ).rejects.toBeInstanceOf(BadRequestException);
 
     await expect(
       service.create({
         ...baseDto,
         endsAt: baseDto.startsAt,
-      }),
+      }, '1234'),
     ).rejects.toBeInstanceOf(BadRequestException);
 
     console.log(
@@ -118,35 +119,48 @@ describe('ReservationsService (unit)', () => {
   });
 
   it('should reject on overlap', async () => {
-    console.log('[reservations:overlap] Simulating overlap');
+    console.log('[reservations:validation] Testing overlap');
 
-    prisma.reservation.findFirst.mockResolvedValue({ id: 'existing' });
-    await expect(service.create(baseDto)).rejects.toBeInstanceOf(
-      BadRequestException,
-    );
+    const dto = {
+      roomId: 'R1',
+      title: 'Overlap',
+      startsAt: '2025-11-22T09:30:00.000Z',
+      endsAt: '2025-11-22T10:00:00.000Z'
+    };
 
-    console.log(
-      '[reservations:overlap] Rejected as expected due to overlap with existing reservation',
-    );
+    const overlapErr = Object.assign(new Error('reservation_no_overlap'), {
+      code: 'P2010',
+      meta: { code: '23P01', message: 'reservation_no_overlap' },
+    });
+
+    (prisma.$transaction as jest.Mock).mockImplementation(async () => {
+      throw overlapErr;
+    });
+
+    await expect(service.create(dto, '1234')).rejects.toMatchObject({ status: 400 });
+
+    console.log('[reservations:validation] Rejected as expected, overlap');
   });
 
   it('should create when no overlap', async () => {
-    prisma.reservation.findFirst.mockResolvedValue(null);
-
     console.log('[reservations:create] No overlap -> creating');
 
-    prisma.reservation.create.mockResolvedValue({ id: 'new', ...baseDto });
+    const created = { id: 'new', userId: '1234', ...baseDto };
 
-    const out = await service.create(baseDto);
+    (prisma.$transaction as jest.Mock).mockImplementation(async (fn: any) => {
+      const tx = {
+        reservation: {
+          create: jest.fn().mockResolvedValue(created),
+        },
+      };
+      return fn(tx);
+    });
 
-    console.log('[reservations:create] Created reservation:', out);
-
-    expect(out).toEqual({ id: 'new', ...baseDto });
+    const out = await service.create(baseDto, '1234');
+    expect(out).toEqual(created);
   });
 
   it('should update when no overlap', async () => {
-    prisma.reservation.findFirst.mockResolvedValue(null);
-
     console.log('[reservations:update] No overlap -> updating');
 
     prisma.reservation.update = jest

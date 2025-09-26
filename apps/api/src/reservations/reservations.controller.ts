@@ -27,10 +27,11 @@ export class ReservationsController {
   })
   @Post()
   create(@Body() createReservationDto: CreateReservationDto, @Req() req: any) {
+    console.log('req.user', req.user);
+
     return this.reservationsService.create({
       ...createReservationDto,
-      userId: req.user.id
-    });
+    }, req.user.id);
   }
 
   @ApiOkResponse({ description: 'List of all reservations' })
