@@ -30,7 +30,7 @@ function isColdStartError(err: AxiosError) {
   const status = err.response?.status;
   const networkish = !err.response;
   const gateway = status === 502 || status === 503 || status === 504;
-  const aborted = (err.code === 'ECONNABORTED');
+  const aborted = err.code === 'ECONNABORTED';
   return networkish || gateway || aborted;
 }
 
@@ -68,7 +68,7 @@ http.interceptors.response.use(
     const maxRetries = 2;
     const maxElapsedTime = 70000;
 
-    const startedAt = cfg.startedAt ?? Date.now() as number;
+    const startedAt = cfg.startedAt ?? (Date.now() as number);
 
     if (isColdStartError(error)) {
       const elapsed = Date.now() - startedAt;
@@ -86,12 +86,8 @@ http.interceptors.response.use(
 
     const data = error.response?.data as ErrorResponseData;
 
-    const formatedError: string = data.message ||
-      (data)?.error ||
-      error.message ||
-      'Unknown error';
+    const formatedError: string = data.message || data?.error || error.message || 'Unknown error';
 
     return Promise.reject(new Error(`API ${status ?? ''} ${formatedError}`.trim()));
-
   },
 );
