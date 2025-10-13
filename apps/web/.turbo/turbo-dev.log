@@ -17,15 +17,18 @@
      · serverActions
 
  [32m[1m✓[22m[39m Starting...
- [32m[1m✓[22m[39m Ready in 1828ms
- [37m[1m○[22m[39m Compiling /reservations ...
- [32m[1m✓[22m[39m Compiled /reservations in 1690ms (810 modules)
+ [32m[1m✓[22m[39m Ready in 1762ms
+ [37m[1m○[22m[39m Compiling / ...
+ [32m[1m✓[22m[39m Compiled / in 1611ms (818 modules)
 rooms []
- GET /reservations [32m200[39m in 2187ms
-(node:21489) [DEP0060] DeprecationWarning: The `util._extend` API is deprecated. Please use Object.assign() instead.
+ GET / [32m200[39m in 2490ms
+(node:7107) [DEP0060] DeprecationWarning: The `util._extend` API is deprecated. Please use Object.assign() instead.
 (Use `node --trace-deprecation ...` to show where the warning was created)
- [32m[1m✓[22m[39m Compiled /favicon.ico in 323ms (542 modules)
- GET /favicon.ico [32m200[39m in 460ms
-rooms []
- GET /reservations [32m200[39m in 312ms
- GET /favicon.ico [32m200[39m in 15ms
+ [32m[1m✓[22m[39m Compiled /favicon.ico in 407ms (546 modules)
+ GET /favicon.ico [32m200[39m in 578ms
+ [32m[1m✓[22m[39m Compiled /reservations in 457ms (844 modules)
+ GET /reservations [32m200[39m in 584ms
+ [37m[1m○[22m[39m Compiling /auth ...
+ [32m[1m✓[22m[39m Compiled /auth in 525ms (853 modules)
+ GET /auth [32m200[39m in 708ms
+ GET /reservations [32m200[39m in 32ms

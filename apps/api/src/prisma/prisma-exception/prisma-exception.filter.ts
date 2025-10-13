@@ -4,7 +4,13 @@ import { Prisma } from '@prisma/client';
 type JsonPrimitive = string | number | boolean | null;
 type Json = JsonPrimitive | Json[] | { [key: string]: Json };
 
-@Catch()
+@Catch(
+    Prisma.PrismaClientKnownRequestError,
+    Prisma.PrismaClientValidationError,
+    Prisma.PrismaClientInitializationError,
+    Prisma.PrismaClientUnknownRequestError,
+    Prisma.PrismaClientRustPanicError,
+)
 export class PrismaExceptionFilter<T> implements ExceptionFilter {
     catch(exception: T, host: ArgumentsHost) {
         const ctx = host.switchToHttp();
